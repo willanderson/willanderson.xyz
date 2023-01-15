@@ -1,0 +1,74 @@
+---
+layout: default
+---
+
+<!-- Hero Image -->
+
+<div class="px-4 rounded-2xl">
+  <div class="w-full aspect-video max-h-[64vh] relative overflow-hidden rounded-2xl">
+    <div class="absolute w-full h-full backdrop-blur-3xl z-10 bg-[rgba(255, 255, 255, 0.25)]"></div>
+    <div style="background-image: url('{{ page.hero | relative_url }}')"
+      class="w-full h-full absolute bg-cover scale-x-150 scale-y-50"></div>
+    <div class="w-full h-full flex items-center justify-center relative z-10 p-6">
+      <img class="drop-shadow-2xl max-h-full" src="{{ page.hero | relative_url }}" />
+    </div>
+  </div>
+</div>
+
+<!-- Post Header -->
+<section class="p-4 my-4">
+  <div class="flex w-full">
+    <div class="flex flex-col max-w-2xl lg:px-2">
+      <div class="w-full">
+        <h2 class="text-xl text-zinc-500">{{ page.company }}</h2>
+      </div>
+      <div class="w-full">
+        <h1 class="text-3xl">{{ page.title }}</h1>
+      </div>
+      <div class="w-full mt-4 max-w-prose">
+        <p>{{ page.intro }}</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="gallery" class="p-4 mb-4 grid grid-cols-1 gap-y-8 lg:gap-y-4">
+  {% for item in page.items %}
+  <!-- Item Start -->
+  <div class="grid grid-cols-4 gap-x-4">
+    <div
+      class="bg-black rounded-2xl p-8 col-span-full lg:col-span-3 flex items-center aspect-[4/3] relative overflow-hidden">
+      <div style="background-image: url('{{ item.bg | relative_url }}')"
+        class="w-full h-full absolute left-0 top-0 bg-cover bg-center bg-no-repeat">
+      </div>
+      <div class="item w-full h-full flex items-center justify-center relative z-10 max-h-[80%]">
+        <img class="drop-shadow-2xl max-h-full" src="{{ item.asset | relative_url }}" />
+      </div>
+    </div>
+    <div class="col-span-full lg:col-span-1 pt-2">
+      <div class="text-sm text-zinc-500 max-w-prose">
+        <p>{{ item.text }}</p>
+      </div>
+    </div>
+  </div>
+  <!-- Item End -->
+  {% endfor %}
+</section>
+
+<section class="p-4 mb-4">
+  <h1 class="text-2xl py-2 underline">More work</h1>
+  <div class="grid grid-cols-1 lg:grid-cols-3 gap-4">
+    <a href="/post">
+      <div class="bg-black rounded-2xl p-6 flex items-center h-full">
+        <img src="assets/images/03.png" />
+      </div>
+    </a>
+    <div class="bg-black rounded-2xl p-6 flex items-center h-full">
+      <img src="assets/images/01.png" />
+    </div>
+    <div class="bg-black rounded-2xl p-6 flex items-center h-full">
+      <img src="assets/images/01.png" />
+    </div>
+  </div>
+</section>
+</section>
