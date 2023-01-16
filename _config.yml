@@ -29,7 +29,6 @@ baseurl: /willanderson.xyz/
 
 
 # Build settings
-theme: minima
 plugins:
   - jekyll-postcss
 postcss:
