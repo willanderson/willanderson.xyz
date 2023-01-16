@@ -5,12 +5,13 @@ layout: default
 <section class="px-4">
   <div class="grid grid-cols-2 gap-2">
     {% for project in site.projects %}
-    <a href="{{project.url}}">
+    <a href="{{project.url | relative_url }}">
       <div class="bg-black rounded-2xl p-6 h-full flex items-center justify-center">
-        <img class="max-h-[80%]" src="{{ project.hero }}" />
+        <img class="max-h-[80%]" src="{{ project.hero | relative_url }}" />
       </div>
     </a>
     {% endfor %}
 
   </div>
 </section>
+
