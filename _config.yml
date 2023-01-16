@@ -30,7 +30,7 @@ baseurl: /willanderson.xyz/
 
 # Build settings
 plugins:
-  - jekyll-postcss
+  - jekyll-postcss-v2
 postcss:
   cache: false
 collections:
