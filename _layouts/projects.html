@@ -2,11 +2,11 @@
 layout: default
 ---
 
-<section class="px-4">
-  <div class="grid grid-cols-2 gap-2">
+<section class="p-4">
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-2 ">
     {% for project in site.projects %}
     <a href="{{project.url | relative_url }}">
-      <div class="bg-black rounded-2xl p-6 h-full flex items-center justify-center">
+      <div class="bg-black rounded-2xl p-6 h-full flex items-center justify-center lg:aspect-[5/4] md:aspect-[5/4] aspect-[4/5]">
         <img class="max-h-[80%]" src="{{ project.hero | relative_url }}" />
       </div>
     </a>
