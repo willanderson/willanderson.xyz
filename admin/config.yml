@@ -5,14 +5,25 @@ backend:
   branch: main # Branch to update (optional; defaults to master)
 media_folder: 'assets/images'
 collections:
-  - name: 'blog'
-    label: 'Blog'
-    folder: '_posts/'
-    fields:
-      - { name: Title }
   - name: 'projects'
     label: 'Projects'
     folder: '_projects/'
+    editor:
+      preview: false
     create: true
     fields:
-      - { name: Title }
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Company', name: 'company', widget: 'string' }
+      - { label: 'Hero', name: 'hero', widget: 'image' }
+      - { label: 'Introduction', name: 'intro', widget: 'markdown' }
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - label: 'Items'
+        name: 'items'
+        widget: 'list'
+        fields:
+          - { label: 'Asset', name: 'asset', widget: 'image' }
+          - { label: 'Background', name: 'bg', widget: 'image'}
+          - { label: 'Caption', name: 'text', widget: 'text'}
+ 
+ 
+
