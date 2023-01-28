@@ -16,7 +16,6 @@ collections:
       - { label: 'Company', name: 'company', widget: 'string' }
       - { label: 'Hero', name: 'hero', widget: 'image' }
       - { label: 'Introduction', name: 'intro', widget: 'markdown' }
-      - { label: 'Title', name: 'title', widget: 'string' }
       - label: 'Items'
         name: 'items'
         widget: 'list'
