@@ -2,6 +2,7 @@
 title: Layout Engine
 company: Squarespace
 hero: "/assets/images/pdp-01.png"
+preview: A layout engine for Squarespace Commerce 
 intro: Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti laudantium quidem ex repellendus! Exercitationem possimus neque soluta animi cupiditate suscipit.
 items:
   - asset: /assets/images/pdp-02.png

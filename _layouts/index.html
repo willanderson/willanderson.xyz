@@ -2,23 +2,25 @@
 layout: default
 ---
 
-<section class="px-4 grid grid-cols-4 gap-x-4 min-h-[50vh]">
-  <h1 class="col-span-4 lg:col-span-3 text-3xl max-w-prose">
-    Hi, I’m Will and this is my website. I work on web and mobile apps, design
-    systems, and the occasional website. I’m currently a Product Designer at
-    Meta. I live in Brooklyn, New York.
+<section class="p-4 grid grid-cols-4 gap-x-4 min-h-[50vh]">
+  <h1 class="col-span-4 text-5xl max-w-prose">
+    Will Anderson is a Product Designer living in New York, NY. He's created work for companies like
+    <span class="fb-color w-12 h-12 bg-no-repeat bg-left-center inline-block mr-1 bg-cover bg-[center_top_0.25rem]"></span>Facebook,
+    <span><span class="sqsp w-12 h-12 bg-no-repeat bg-left-center inline-block mr-1 bg-cover bg-[center_top_0.25rem]"></span>Squarespace,</span> 
+    <span class="coinbase w-12 h-12 bg-no-repeat bg-left-center inline-block mr-1 bg-cover bg-[center_top_0.25rem]"></span>Coinbase, and
+    <span class="artsy w-12 h-12 bg-no-repeat bg-left-center inline-block mr-1 bg-cover bg-[center_top_0.25rem]"></span>Artsy.
   </h1>
 </section>
 
 
 
-<section class="p-4">
+<section class="p-4 mb-6">
   <a href="{{ '/projects/' | relative_url }}">
-    <h1 class="text-2xl py-2 underline">Work</h1>
+    <h1 class="text-4xl py-4 underline">Work</h1>
   </a>
-  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-2">
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4">
 
-    {% for project in site.projects limit: 2 %}
+    {% for project in site.projects | limit: 4 %}
     <a href="{{ project.url | relative_url }}">
       <div class="bg-black rounded-2xl p-4 h-full flex items-center justify-center">
         <img class="max-h-[80%]" src="{{ project.hero | relative_url }}" />
@@ -29,11 +31,9 @@ layout: default
   </div>
 </section>
 
-<section class="p-4">
+<!-- <section class="p-4">
   <h1 class="text-2xl py-2 underline">CV</h1>
   <div class="grid grid-cols-1">
-
-
     <div class="md:grid lg:grid lg:grid-cols-4 grid-cols-3 gap-x-4 text-2xl py-3">
       <div class="flex items-center">
         <i class="meta w-8 h-8 bg-no-repeat bg-left-center inline-block mr-1"></i>
@@ -42,14 +42,6 @@ layout: default
       <div>Product Designer</div>
       <div class="text-gray-400">2022–Present</div>
     </div>
-
-
-
-
-
-
-
-
     <div class="md:grid lg:grid lg:grid-cols-4 grid-cols-3 gap-x-4 text-2xl py-3">
       <div class="flex items-start">
         <i class="fa w-8 h-8 bg-no-repeat bg-left-center inline-block mr-1"></i>
@@ -91,4 +83,4 @@ layout: default
       <div class="text-gray-400">2014</div>
     </div>
   </div>
-</section>
+</section> -->

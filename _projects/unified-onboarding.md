@@ -2,6 +2,7 @@
 title: Unified Onboarding
 company: Coinbase
 hero: "/assets/images/01.png"
+preview: A unified onboarding framework
 intro: Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti laudantium quidem ex repellendus! Exercitationem possimus neque soluta animi cupiditate suscipit.
 items:
   - asset: /assets/images/cb_uo-01.png

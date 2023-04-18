@@ -2,6 +2,7 @@
 title: ENS Claim Flow
 company: Coinbase
 hero: "/assets/images/ens-hero.png"
+preview: A new identity for crypto wallets
 intro: Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti laudantium quidem ex repellendus! Exercitationem possimus neque soluta animi cupiditate suscipit.
 items:
   - asset: /assets/images/ens-01.png

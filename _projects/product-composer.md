@@ -2,6 +2,7 @@
 title: Product Composer
 company: Squarespace
 hero: "/assets/images/03.png"
+preview: A new way to create products.
 intro: Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti laudantium quidem ex repellendus! Exercitationem possimus neque soluta animi cupiditate suscipit.
 items:
   - asset: "/assets/images/product-composer/01-Top.png"
