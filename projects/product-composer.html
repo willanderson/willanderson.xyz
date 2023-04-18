@@ -15,19 +15,32 @@
 </head>
 
 <body>
-  <nav class="flex items-center px-4 py-3 w-full sticky top-0 bg-white z-50">
+  <nav class="flex justify-between items-center px-4 w-full sticky top-0 bg-white z-50">
     <a href="/">
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <circle cx="12" cy="12" r="12" fill="#FFCD29" />
-        </svg>
+        <div class="flex flex-row items-center">
+            <div class="mr-2">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="12" cy="12" r="12" fill="#FFCD29" />
+                </svg>
+            </div>
+            <div class="overflow-hidden h-14 flex items-center relative">
+                <h1 class="text-lg">Will Anderson</h1>
+            </div>
+        </div>
+
     </a>
+
+    <div class="text-lg">
+        <a href="/projects/" class="mr-4">Work</a>
+        <a href="/about/" class="mr-4">Info</a>
+    </div>
 </nav> <!-- Hero Image -->
 
 <div class="px-4 rounded-2xl">
   <div class="w-full aspect-video max-h-[64vh] relative overflow-hidden rounded-2xl">
     <div class="absolute w-full h-full backdrop-blur-2xl z-10 bg-[rgba(255, 255, 255, 0.25)]"></div>
     <div style="background-image: url('/assets/images/03.png')"
-      class="w-full h-full absolute bg-cover scale-200"></div>
+      class="w-full h-full absolute bg-cover scale-200 opacity-50"></div>
     <div class="w-full h-full flex items-center justify-center relative z-10 p-6">
       <img class="drop-shadow-2xl max-h-full" src="/assets/images/03.png" />
     </div>
@@ -42,7 +55,7 @@
         <h2 class="text-xl text-zinc-500">Squarespace</h2>
       </div>
       <div class="w-full">
-        <h1 class="text-3xl">Product Composer</h1>
+        <h1 class="text-4xl">Product Composer</h1>
       </div>
       <div class="w-full mt-4 max-w-prose">
         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti laudantium quidem ex repellendus! Exercitationem possimus neque soluta animi cupiditate suscipit.</p>
@@ -51,12 +64,12 @@
   </div>
 </section>
 
-<section id="gallery" class="p-4 mb-4 grid grid-cols-1 gap-y-8 lg:gap-y-4">
+<section id="gallery" class="p-4 mb-4 grid grid-cols-1 gap-y-8">
   
   <!-- Item Start -->
   <div class="grid grid-cols-4 gap-x-4">
     <div
-      class="bg-black rounded-2xl p-8 col-span-full lg:col-span-3 flex items-center aspect-[4/3] relative overflow-hidden">
+      class="bg-black rounded-2xl p-8 lg:col-span-3 col-span-4 flex items-center aspect-[4/3] relative overflow-hidden max-h-screen">
       <div style="background-image: url('/assets/images/product-composer/01-Bg.png')"
         class="w-full h-full absolute left-0 top-0 bg-cover bg-center bg-no-repeat">
       </div>
@@ -64,18 +77,21 @@
         <img class="drop-shadow-2xl max-h-full" src="/assets/images/product-composer/01-Top.png" />
       </div>
     </div>
-    <div class="col-span-full lg:col-span-1 pt-2">
-      <div class="text-sm text-zinc-500 max-w-prose">
+
+    <div class="col-span-full pt-2">
+      <div class="text-sm text-zinc-500 max-w-[72ch]">
         <p>The legacy creation tool (above) was hacked together on top of the blog tool, and was over 6-years old. After talking to users and auditing the flow, the team identified some key concerns</p>
       </div>
     </div>
+
   </div>
+ 
   <!-- Item End -->
   
   <!-- Item Start -->
   <div class="grid grid-cols-4 gap-x-4">
     <div
-      class="bg-black rounded-2xl p-8 col-span-full lg:col-span-3 flex items-center aspect-[4/3] relative overflow-hidden">
+      class="bg-black rounded-2xl p-8 lg:col-span-3 col-span-4 flex items-center aspect-[4/3] relative overflow-hidden max-h-screen">
       <div style="background-image: url('')"
         class="w-full h-full absolute left-0 top-0 bg-cover bg-center bg-no-repeat">
       </div>
@@ -83,18 +99,21 @@
         <img class="drop-shadow-2xl max-h-full" src="/assets/images/product-composer/02-Top.png" />
       </div>
     </div>
-    <div class="col-span-full lg:col-span-1 pt-2">
-      <div class="text-sm text-zinc-500 max-w-prose">
+
+    <div class="col-span-full pt-2">
+      <div class="text-sm text-zinc-500 max-w-[72ch]">
         <p>I made it a priority to simplify the IA. The end result was a vertically stacked layout with intuitive groupings, clearer section headers, and an order that mapped back to how our users talked and thought about their products.</p>
       </div>
     </div>
+
   </div>
+ 
   <!-- Item End -->
   
   <!-- Item Start -->
   <div class="grid grid-cols-4 gap-x-4">
     <div
-      class="bg-black rounded-2xl p-8 col-span-full lg:col-span-3 flex items-center aspect-[4/3] relative overflow-hidden">
+      class="bg-black rounded-2xl p-8 lg:col-span-3 col-span-4 flex items-center aspect-[4/3] relative overflow-hidden max-h-screen">
       <div style="background-image: url('')"
         class="w-full h-full absolute left-0 top-0 bg-cover bg-center bg-no-repeat">
       </div>
@@ -102,18 +121,21 @@
         <img class="drop-shadow-2xl max-h-full" src="/assets/images/product-composer/03.png" />
       </div>
     </div>
-    <div class="col-span-full lg:col-span-1 pt-2">
-      <div class="text-sm text-zinc-500 max-w-prose">
+
+    <div class="col-span-full pt-2">
+      <div class="text-sm text-zinc-500 max-w-[72ch]">
         <p>To simplify things, we progressivley disclosed certain fields. For example, the field for adding a discounted price only appeared after the user marked the product to On Sale.</p>
       </div>
     </div>
+
   </div>
+ 
   <!-- Item End -->
   
   <!-- Item Start -->
   <div class="grid grid-cols-4 gap-x-4">
     <div
-      class="bg-black rounded-2xl p-8 col-span-full lg:col-span-3 flex items-center aspect-[4/3] relative overflow-hidden">
+      class="bg-black rounded-2xl p-8 lg:col-span-3 col-span-4 flex items-center aspect-[4/3] relative overflow-hidden max-h-screen">
       <div style="background-image: url('')"
         class="w-full h-full absolute left-0 top-0 bg-cover bg-center bg-no-repeat">
       </div>
@@ -121,18 +143,21 @@
         <img class="drop-shadow-2xl max-h-full" src="/assets/images/product-composer/05.png" />
       </div>
     </div>
-    <div class="col-span-full lg:col-span-1 pt-2">
-      <div class="text-sm text-zinc-500 max-w-prose">
+
+    <div class="col-span-full pt-2">
+      <div class="text-sm text-zinc-500 max-w-[72ch]">
         <p>The legacy composer had a ton of functuonality built into it which we had to support. In order to keep the default composer as simple as possible, I reframed this hodpdge of features as "add-ons" that could be enabled from one section.</p>
       </div>
     </div>
+
   </div>
+ 
   <!-- Item End -->
   
   <!-- Item Start -->
   <div class="grid grid-cols-4 gap-x-4">
     <div
-      class="bg-black rounded-2xl p-8 col-span-full lg:col-span-3 flex items-center aspect-[4/3] relative overflow-hidden">
+      class="bg-black rounded-2xl p-8 lg:col-span-3 col-span-4 flex items-center aspect-[4/3] relative overflow-hidden max-h-screen">
       <div style="background-image: url('')"
         class="w-full h-full absolute left-0 top-0 bg-cover bg-center bg-no-repeat">
       </div>
@@ -140,18 +165,21 @@
         <img class="drop-shadow-2xl max-h-full" src="/assets/images/product-composer/06.png" />
       </div>
     </div>
-    <div class="col-span-full lg:col-span-1 pt-2">
-      <div class="text-sm text-zinc-500 max-w-prose">
+
+    <div class="col-span-full pt-2">
+      <div class="text-sm text-zinc-500 max-w-[72ch]">
         <p>Another big milestone in the project was the new flow for creating and managing product variants. In the legacy tool, each product variation had to be manually created on a SKU by SKU basis. The Product Composer allowed users to bulk generate SKUs in a single click. We also had a nifty little preview on web.</p>
       </div>
     </div>
+
   </div>
+ 
   <!-- Item End -->
   
   <!-- Item Start -->
   <div class="grid grid-cols-4 gap-x-4">
     <div
-      class="bg-black rounded-2xl p-8 col-span-full lg:col-span-3 flex items-center aspect-[4/3] relative overflow-hidden">
+      class="bg-black rounded-2xl p-8 lg:col-span-3 col-span-4 flex items-center aspect-[4/3] relative overflow-hidden max-h-screen">
       <div style="background-image: url('')"
         class="w-full h-full absolute left-0 top-0 bg-cover bg-center bg-no-repeat">
       </div>
@@ -159,18 +187,21 @@
         <img class="drop-shadow-2xl max-h-full" src="/assets/images/product-composer/07-alt1.png" />
       </div>
     </div>
-    <div class="col-span-full lg:col-span-1 pt-2">
-      <div class="text-sm text-zinc-500 max-w-prose">
+
+    <div class="col-span-full pt-2">
+      <div class="text-sm text-zinc-500 max-w-[72ch]">
         <p>The composer was designed modularly. Sections within the tool could be hidden, emphasized, or moved around based on the type of product the user was creating (e.g. Physical or Digital). This approach made porting designs across device types a breeze.</p>
       </div>
     </div>
+
   </div>
+ 
   <!-- Item End -->
   
   <!-- Item Start -->
   <div class="grid grid-cols-4 gap-x-4">
     <div
-      class="bg-black rounded-2xl p-8 col-span-full lg:col-span-3 flex items-center aspect-[4/3] relative overflow-hidden">
+      class="bg-black rounded-2xl p-8 lg:col-span-3 col-span-4 flex items-center aspect-[4/3] relative overflow-hidden max-h-screen">
       <div style="background-image: url('')"
         class="w-full h-full absolute left-0 top-0 bg-cover bg-center bg-no-repeat">
       </div>
@@ -178,18 +209,21 @@
         <img class="drop-shadow-2xl max-h-full" src="/assets/images/product-composer/08.png" />
       </div>
     </div>
-    <div class="col-span-full lg:col-span-1 pt-2">
-      <div class="text-sm text-zinc-500 max-w-prose">
+
+    <div class="col-span-full pt-2">
+      <div class="text-sm text-zinc-500 max-w-[72ch]">
         <p></p>
       </div>
     </div>
+
   </div>
+ 
   <!-- Item End -->
   
   <!-- Item Start -->
   <div class="grid grid-cols-4 gap-x-4">
     <div
-      class="bg-black rounded-2xl p-8 col-span-full lg:col-span-3 flex items-center aspect-[4/3] relative overflow-hidden">
+      class="bg-black rounded-2xl p-8 lg:col-span-3 col-span-4 flex items-center aspect-[4/3] relative overflow-hidden max-h-screen">
       <div style="background-image: url('')"
         class="w-full h-full absolute left-0 top-0 bg-cover bg-center bg-no-repeat">
       </div>
@@ -197,18 +231,21 @@
         <img class="drop-shadow-2xl max-h-full" src="/assets/images/product-composer/09.png" />
       </div>
     </div>
-    <div class="col-span-full lg:col-span-1 pt-2">
-      <div class="text-sm text-zinc-500 max-w-prose">
+
+    <div class="col-span-full pt-2">
+      <div class="text-sm text-zinc-500 max-w-[72ch]">
         <p></p>
       </div>
     </div>
+
   </div>
+ 
   <!-- Item End -->
   
   <!-- Item Start -->
   <div class="grid grid-cols-4 gap-x-4">
     <div
-      class="bg-black rounded-2xl p-8 col-span-full lg:col-span-3 flex items-center aspect-[4/3] relative overflow-hidden">
+      class="bg-black rounded-2xl p-8 lg:col-span-3 col-span-4 flex items-center aspect-[4/3] relative overflow-hidden max-h-screen">
       <div style="background-image: url('')"
         class="w-full h-full absolute left-0 top-0 bg-cover bg-center bg-no-repeat">
       </div>
@@ -216,18 +253,21 @@
         <img class="drop-shadow-2xl max-h-full" src="/assets/images/product-composer/10.png" />
       </div>
     </div>
-    <div class="col-span-full lg:col-span-1 pt-2">
-      <div class="text-sm text-zinc-500 max-w-prose">
+
+    <div class="col-span-full pt-2">
+      <div class="text-sm text-zinc-500 max-w-[72ch]">
         <p></p>
       </div>
     </div>
+
   </div>
+ 
   <!-- Item End -->
   
   <!-- Item Start -->
   <div class="grid grid-cols-4 gap-x-4">
     <div
-      class="bg-black rounded-2xl p-8 col-span-full lg:col-span-3 flex items-center aspect-[4/3] relative overflow-hidden">
+      class="bg-black rounded-2xl p-8 lg:col-span-3 col-span-4 flex items-center aspect-[4/3] relative overflow-hidden max-h-screen">
       <div style="background-image: url('')"
         class="w-full h-full absolute left-0 top-0 bg-cover bg-center bg-no-repeat">
       </div>
@@ -235,36 +275,65 @@
         <img class="drop-shadow-2xl max-h-full" src="/assets/images/product-composer/11.png" />
       </div>
     </div>
-    <div class="col-span-full lg:col-span-1 pt-2">
-      <div class="text-sm text-zinc-500 max-w-prose">
+
+    <div class="col-span-full pt-2">
+      <div class="text-sm text-zinc-500 max-w-[72ch]">
         <p></p>
       </div>
     </div>
+
   </div>
+ 
   <!-- Item End -->
   
 </section>
 
+ <!-- More Start -->
 <section class="p-4 mb-4">
   <h1 class="text-2xl py-2 underline">More work</h1>
-  <div class="grid grid-cols-1 lg:grid-cols-3 gap-4">
-    <a href="/post">
-      <div class="bg-black rounded-2xl p-6 flex items-center h-full">
-        <img src="assets/images/03.png" />
+  <div class="grid grid-cols-2 lg:grid-cols-2 gap-4">
+    
+    <a href="/projects/ens-claim.html">
+      <div class="bg-stone-100  rounded-2xl flex items-center h-full relative overflow-hidden ">
+        <div class="absolute w-full h-full backdrop-blur-2xl z-10 bg-[rgba(255, 255, 255, 0.25)]"></div>
+        <div style="background-image: url('/assets/images/ens-hero.png')"
+        class="w-full h-full absolute bg-cover scale-400 opacity-50 "></div>
+        <div class="w-full h-full flex items-center justify-center relative z-10 px-24 py-10">
+          <img class="drop-shadow-2xl max-h-full max-h-[80%]" src="/assets/images/ens-hero.png" />
+        </div>
       </div>
     </a>
-    <div class="bg-black rounded-2xl p-6 flex items-center h-full">
-      <img src="assets/images/01.png" />
-    </div>
-    <div class="bg-black rounded-2xl p-6 flex items-center h-full">
-      <img src="assets/images/01.png" />
-    </div>
-  </div>
+    
+    <a href="/projects/pdp-engine.html">
+      <div class="bg-stone-100  rounded-2xl flex items-center h-full relative overflow-hidden ">
+        <div class="absolute w-full h-full backdrop-blur-2xl z-10 bg-[rgba(255, 255, 255, 0.25)]"></div>
+        <div style="background-image: url('/assets/images/pdp-01.png')"
+        class="w-full h-full absolute bg-cover scale-400 opacity-50 "></div>
+        <div class="w-full h-full flex items-center justify-center relative z-10 px-24 py-10">
+          <img class="drop-shadow-2xl max-h-full max-h-[80%]" src="/assets/images/pdp-01.png" />
+        </div>
+      </div>
+    </a>
+    
+
 </section>
-</section> <footer class="p-4 grid grid-cols-4 gap-x-4 min-h-[30vh] bg-stone-100 items-end border-t border-neutral-400">
-    <p class="col-span-4 lg:col-span-3 text-xl max-w-prose">    
-        Thanks for visiting my website. Sorry, it’s still under construction. If you want to reach out about something, send me an email at wmaxand@gmail.com. Also, feel free to follow me on Twitter or Instagram. 
+ <!-- More End -->
+
+</section> <footer class="p-4 flex items-start flex-col min-h-[30vh] bg-stone-100  border-t border-neutral-400">
+    <p class="text-4xl max-w-prose py-4">    
+        Say hello — <br>
+        <a class="underline" href="mailto:wmaxand@gmail.com">wmaxand@gmail.com</a>
     </p>
+    <div class="flex flex-row grow items-end justify-end text-lg">
+        <!-- <div class="mr-4">
+            <p  class="text-stone-400">© Will Anderson 2023</p>
+        </div> -->
+        <div class="mr-4">
+            <a class="underline mr-2" href="https://instagram.com/willanderson">IG</a>
+            <a class="underline" href="https://www.linkedin.com/in/wmaxand/">LI</a>
+        </div>
+    </div>
+
 </footer>
 </body>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/5.3.4/photoswipe-lightbox.esm.min.js"
