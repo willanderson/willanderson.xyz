@@ -14,6 +14,7 @@ collections:
     fields:
       - { label: 'Title', name: 'title', widget: 'string' }
       - { label: 'Company', name: 'company', widget: 'string' }
+      - { label: 'Date', name: 'date', widget: 'date' }      
       - { label: 'Hero', name: 'hero', widget: 'image' }
       - { label: 'Preview', name: 'preview', widget: 'string' }
       - { label: 'Introduction', name: 'intro', widget: 'markdown' }
@@ -21,7 +22,7 @@ collections:
         name: 'items'
         widget: 'list'
         fields:
-          - { label: 'Asset', name: 'asset', widget: 'image' }
+          - { label: 'Asset', name: 'asset', widget: 'image', required: false }
           - { label: 'Background', name: 'bg', widget: 'image', required: false }
           - { label: 'Caption', name: 'text', widget: 'text', required: false }
  
