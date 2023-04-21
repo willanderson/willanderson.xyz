@@ -1,29 +1,31 @@
 ---
 title: Layout Engine
 company: Squarespace
-hero: "/assets/images/pdp-01.png"
-preview: A layout engine for Squarespace Commerce 
-intro: Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti laudantium quidem ex repellendus! Exercitationem possimus neque soluta animi cupiditate suscipit.
+hero: /assets/images/pdp-01.png
+preview: A layout engine for Squarespace Commerce
+intro: One of my final project at Squarespace centered around new tools for
+  designing and customizing Product Detail Pages (PDPs). This effort included
+  redesigned layouts and components, as well as a new inline editing experience.
 items:
   - asset: /assets/images/pdp-02.png
-    bg:
-    text:
+    bg: null
+    text: null
   - asset: /assets/images/pdp-03.png
-    bg:
-    text:
+    bg: null
+    text: null
   - asset: /assets/images/pdp-04.png
-    bg:
-    text:
+    bg: null
+    text: null
   - asset: /assets/images/pdp-05.png
-    bg:
-    text:
+    bg: null
+    text: null
   - asset: /assets/images/pdp-06.png
-    bg:
-    text:
+    bg: null
+    text: null
   - asset: /assets/images/pdp-07.png
-    bg:
-    text:
+    bg: null
+    text: null
   - asset: /assets/images/pdp-08.png
-    bg:
-    text:
+    bg: null
+    text: null
 ---
