@@ -24,8 +24,8 @@ layout: default
 
     {% for project in site.projects | limit: 4 %}
     <a href="{{ project.url | relative_url }}">
-      <div class="bg-black rounded-2xl p-4 h-full flex items-center justify-center">
-        <img class="max-h-[80%]" src="{{ project.hero | relative_url }}" />
+      <div class="bg-black rounded-2xl p-14 h-full flex items-center justify-center">
+        <img class="object-contain aspect-[4/3]" src="{{ project.hero | relative_url }}" />
       </div>
     </a>
     {% endfor %}
