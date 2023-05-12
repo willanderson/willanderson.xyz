@@ -6,6 +6,7 @@ preview: A layout engine for Squarespace Commerce
 intro: One of my final project at Squarespace centered around new tools for
   designing and customizing Product Detail Pages (PDPs). This effort included
   redesigned layouts and components, as well as a new inline editing experience.
+status: Published
 items:
   - asset: /assets/images/pdp-02.png
     bg: null

@@ -6,12 +6,12 @@ preview: A unified onboarding framework
 intro: >-
   I worked on a visual overhaul and unification of Coinbase's multi-product
   onboarding flows. We had to 2 goals: 
-
-
+  
   First, establish a system for onboarding users which could be reused and relied on for Coinbase's vast product offerings. At the time, Coinbase offered 14 products, and s supported 12 distinct onboarding flows across web and mobile devices. 
 
 
-  N﻿ext, uplevel the craft and quality of the flow by introducing a new visual style that aligned with Coinbase's recent rebrand. 
+  Next, uplevel the craft and quality of the flow by introducing a new visual style that aligned with Coinbase's recent rebrand. 
+status: Published
 items:
   - asset: /assets/images/cb_uo-01.png
     bg: null

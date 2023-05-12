@@ -7,6 +7,7 @@ intro: At Squarespace, I led a project to redesign the product creation flow—a
   key experience that users interacted with on a weekly, sometimes daily basis.
   The goal was to radically simplify how users managed their online inventory,
   and create a seamless editing experience across web and mobile.
+status: Published
 items:
   - asset: /assets/images/product-composer/01-Top.png
     bg: /assets/images/product-composer/01-Bg.png

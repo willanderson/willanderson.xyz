@@ -8,6 +8,7 @@ intro: A﻿s part of a Hack week project, I worked with a small engineering team
   merchants who primarily sold products through social media and private
   messaging, we wanted to design a tool that supported expressive online selling
   without the need for a store or website.
+status: Published
 items:
   - asset: /assets/images/sellit-0102.png
     text: "The existing product creation flow. "
