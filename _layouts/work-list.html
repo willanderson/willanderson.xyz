@@ -1,0 +1,37 @@
+---
+layout: default
+---
+
+<section class="py-4 px-3 md:px-4 lg:px-6 grid grid-cols-4 gap-x-4">
+  <h1 class="col-span-4 lg:col-span-3 lg:text-4xl text-3xl max-w-prose py-1">
+    Recent Work
+  </h1>
+</section>
+
+
+
+<section class="py-4 px-3 md:px-4 lg:px-6 mb-6">
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-3 md:gap-4 lg:gap-6 ">
+    {% for project in site.work %}
+
+    <div class="flex flex-col">
+      <div class="bg-black rounded-2xl h-full flex items-center justify-center grow">
+        <a href="{{project.url | relative_url }}">
+          <img class="aspect-[4/3] object-contain" src="{{ project.thumbnail | relative_url }}" />
+        </a>
+      </div>
+      <div class="mt-3 flex flex-col">
+        <p class="text-lg leading-tight text-stone-400">
+          {{project.year}}
+        </p>
+        <a href="{{project.url | relative_url }}">
+          <p class="text-xl leading-tight">
+            {{project.name}} ->
+          </p>
+        </a>
+      </div>
+    </div>
+    {% endfor %}
+
+  </div>
+</section>

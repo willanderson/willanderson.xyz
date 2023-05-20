@@ -16,6 +16,8 @@ postcss:
 collections:
   projects:
     output: true
+  work:
+    output: true
 defaults:
   - scope:
       path: ""

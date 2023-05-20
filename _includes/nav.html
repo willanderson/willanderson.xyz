@@ -6,15 +6,18 @@
                     <circle cx="12" cy="12" r="12" fill="#FFCD29" />
                 </svg>
             </div>
-            <div class="overflow-hidden h-14 flex items-center relative">
-                <h1 class="text-lg">Will</h1>
+            <div id="first" class="overflow-hidden h-14 flex items-center relative">
+                <div class="text-lg overflow-hidden">
+                    <span id="firstName">Will</span>
+                    <span id="lastName">Anderson</span>
+                </div>
             </div>
         </div>
 
     </a>
 
     <div class="text-lg">
-        <a href="{{ '/projects/' | relative_url }}" class="mr-4">Work</a>
+        <a href="{{ '/work/' | relative_url }}" class="mr-4">Work</a>
         <a href="{{ '/about/' | relative_url }}" class="mr-4">Info</a>
     </div>
 </nav>
