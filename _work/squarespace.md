@@ -44,7 +44,7 @@ work:
 ---
 
 ## My Role 
-I joined Squarespace in 2018, and focused on their Commerce product. During my time at Squarespace, I helped ship a new Product Creaton flow, tools for inventory management and store design,  and a new  new onboarding flows that enabled easy store creation and setup. 
+I joined Squarespace in 2018, and focused on their Commerce product. During my time at Squarespace, I helped ship a new Product Creaton flow, tools for inventory management and store design,  and a new  onboarding flows that enabled easy store creation and setup. 
 
 ## About Squarespace 
 Squarespace, Inc. is an American website building and hosting company which is based in New York City. It provides software as a service for website building and hosting, and allows users to use pre-built website templates and drag-and-drop elements to create and modify webpages.
