@@ -1,8 +1,9 @@
 ---
 title: Layout Engine
 company: Squarespace
+date: 2023-09-04T16:12:54.167Z
 hero: /assets/images/pdp-01.png
-preview: A layout engine for Squarespace Commerce
+preview: First-class design templates for Sqaurespace Commerce
 intro: One of my final project at Squarespace centered around new tools for
   designing and customizing Product Detail Pages (PDPs). This effort included
   redesigned layouts and components, as well as a new inline editing experience.
