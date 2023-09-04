@@ -15,7 +15,7 @@ layout: default
     {% for project in site.projects %}
     {% if project.status == 'Published' %}
     <div class="flex flex-col">
-      <div class="bg-black rounded-2xl p-14 h-full flex items-center justify-center grow">
+      <div class="bg-black rounded-2xl lg:p-14 md:p-14 p-6 h-full flex items-center justify-center grow">
         <a href="{{project.url | relative_url }}">
           <img class="aspect-[4/3] object-contain	" src="{{ project.hero | relative_url }}" />
         </a>
