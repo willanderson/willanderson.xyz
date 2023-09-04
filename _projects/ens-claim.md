@@ -1,8 +1,9 @@
 ---
 title: ENS Claim Flow
 company: Coinbase
+date: 2023-09-04T16:13:35.669Z
 hero: /assets/images/ens-hero.png
-preview: A new identity for crypto wallets
+preview: Identity and the blockchain
 intro: While working with Coinbase's Identity team, I led the design for an
   integrated ENS claim flow. This work spanned the wallet Chrome extension, iOS
   wallet app, and Coinbase's retail app. The implementation marked a significant
