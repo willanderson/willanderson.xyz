@@ -1,4 +1,5 @@
 ---
+status: published
 title: Unified Onboarding
 company: Coinbase
 date: 2023-09-04T16:10:44.974Z
@@ -13,7 +14,6 @@ intro: >-
 
 
   Next, uplevel the craft and quality of the flow by introducing a new visual style that aligned with Coinbase's recent rebrand.
-status: Published
 items:
   - asset: /assets/images/cb_uo-01.png
     bg: null
