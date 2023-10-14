@@ -11,16 +11,18 @@ layout: default
 
 <section class="px-3 md:px-4 lg:px-6 mb-6">
 
-  <div class="flex flex-col center">
+<div class="flex flex-col center">
     <div class="w-full col-span-3 text-xl">
-      {% assign paragraphs = page.intro | split: "\n" %}
-      {% for paragraph in paragraphs %}
-          {% if paragraph != "" %}
-              <p class="mb-2 max-w-prose">{{ paragraph | markdownify }}</p>
-          {% endif %}
-      {% endfor %}
-    </div>  
-  </div>
+        {% capture formatted_intro %}{{ page.intro | markdownify }}{% endcapture %}
+        {% assign paragraphs = formatted_intro | split: '</p>' %}
+        {% for paragraph in paragraphs %}
+            {% if paragraph != "" %}
+                {{ paragraph | append: '</p>' | replace: '<p>', '<p class="mb-2 max-w-prose">' }}
+            {% endif %}
+        {% endfor %}
+    </div>
+</div>
+
 
 <!-- CV -->
 
@@ -51,32 +53,3 @@ layout: default
 
     </div>
 </section>
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
