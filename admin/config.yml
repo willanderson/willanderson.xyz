@@ -66,6 +66,7 @@ collections:
               - { label: 'Title', name: 'title', widget: 'string', required: true }
               - { label: 'Year', name: 'year', widget: 'string', required: true }
               - { label: 'Location', name: 'location', widget: 'string', required: true }
+              - { label: 'Url', name: 'url', widget: 'string', required: true }
               - { label: 'Description', name: 'description', widget: 'text', required: true }
               
 
