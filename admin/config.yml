@@ -52,7 +52,7 @@ collections:
       preview: false
     create: true
     files: 
-      - label: 'About page'
+      - label: 'About'
         name: 'about'
         file: 'about.md'    
         fields:
