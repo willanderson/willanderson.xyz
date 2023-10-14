@@ -1,5 +1,5 @@
 ---
-status: preview
+status: Preview
 title: ENS Claim Flow
 company: Coinbase
 date: 2023-09-04T16:13:35.669Z
