@@ -1,4 +1,5 @@
 ---
+status: published
 title: Sell It
 company: Squarespace
 date: 2023-09-04T16:16:10.689Z

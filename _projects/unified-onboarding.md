@@ -1,4 +1,5 @@
 ---
+status: published
 title: Unified Onboarding
 company: Coinbase
 date: 2023-09-04T16:10:44.974Z
