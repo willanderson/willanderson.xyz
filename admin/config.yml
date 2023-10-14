@@ -46,7 +46,28 @@ collections:
           - { label: 'Asset', name: 'asset', widget: 'image', required: false }
           - { label: 'Background', name: 'bg', widget: 'image', required: false }
           - { label: 'Caption', name: 'text', widget: 'text', required: false }
-
+  - name: 'pages'
+    label: 'Pages'
+    editor:
+      preview: false
+    create: true
+    files: 
+      - label: 'About page'
+        name: 'about'
+        file: 'about.md'    
+        fields:
+          - { label: 'Title', name: 'title', widget: 'string' }
+          - { label: 'Intro', name: 'intro', widget: 'markdown' }
+          - label: 'CV'
+            name: 'cv'
+            widget: 'list'
+            fields:
+              - { label: 'Year', name: 'year', widget: 'text', required: yes }
+              - { label: 'Title', name: 'title', widget: 'text', required: yes }
+              - { label: 'Company', name: 'company', widget: 'text', required: yes }
+              - { label: 'Location', name: 'location', widget: 'text', required: yes }
+              - { label: 'Description', name: 'description', widget: 'markdown', required: yes }
+              
 
  
 
