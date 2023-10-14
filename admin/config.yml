@@ -62,11 +62,11 @@ collections:
             name: 'cv'
             widget: 'list'
             fields:
-              - { label: 'Year', name: 'year', widget: 'string', required: true }
-              - { label: 'Title', name: 'title', widget: 'string', required: true }
               - { label: 'Company', name: 'company', widget: 'string', required: true }
+              - { label: 'Title', name: 'title', widget: 'string', required: true }
+              - { label: 'Year', name: 'year', widget: 'string', required: true }
               - { label: 'Location', name: 'location', widget: 'string', required: true }
-              - { label: 'Description', name: 'description', widget: 'markdown', required: true }
+              - { label: 'Description', name: 'description', widget: 'text', required: true }
               
 
  
