@@ -1,5 +1,5 @@
 ---
-status: published
+status: Published
 title: Product Composer
 company: Squarespace
 date: 2023-09-04T16:19:21.412Z
