@@ -8,5 +8,12 @@ intro: >-
 
 
   I've been at Meta since 2022, where I work on our monetization tools for creators and businesses across Facebook, Instagram and WhatsApp. Before that, I held a Design Lead position at Free Association, a Brooklyn-based design firm specializing in digital products and brand systems.
-cv: []
+cv:
+  - year: 2022-Present
+    title: Product Designer
+    company: Meta
+    location: New York, NY
+    description: Driving growth and new product experiences for Meta Business Suite,
+      a unified platform of professional and creator tools across Meta's Family
+      of Apps.
 ---
