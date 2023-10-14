@@ -1,12 +1,12 @@
 ---
-status: published
+status: Published
 title: Sell It
 company: Squarespace
 date: 2023-09-04T16:16:10.689Z
 hero: /assets/images/sellit-01.png
 preview: eCommerce without a website
-intro: As part of a Hack week project, I worked with a small engineering team
-  to design and build a concept app aimed at first-time sellers. Inspired by
+intro: As part of a Hack week project, I worked with a small engineering team to
+  design and build a concept app aimed at first-time sellers. Inspired by
   merchants who primarily sold products through social media and private
   messaging, we wanted to design a tool that supported expressive online selling
   without the need for a store or website.
