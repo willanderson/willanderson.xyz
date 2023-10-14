@@ -7,7 +7,7 @@ intro: >-
   startups, brands, and technology companies. 
 
 
-  I've been at Meta since 2022, where I work on our monetization tools for creators and businesses across Facebook, Instagram and WhatsApp. Before that, I held a Design Lead position at Free Association, a Brooklyn-based design firm specializing in digital products and brand systems.
+  I've been at Meta since 2022, where I work on our monetization tools for professionals across Facebook, Instagram and WhatsApp. Before that, I held a Design Lead position at Free Association, a Brooklyn-based design firm specializing in digital products and brand systems.
 cv:
   - year: 2022-Present
     title: Product Designer
