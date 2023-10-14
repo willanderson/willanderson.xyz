@@ -12,7 +12,7 @@ collections:
       preview: false
     create: true
     fields:
-      - { label: 'status', name: 'status', widget: 'select', options: ["preview", "published"] }
+      - { label: 'status', name: 'status', widget: 'select', options: ["Preview", "Published"] }
       - { label: 'Title', name: 'title', widget: 'string' }
       - { label: 'Company', name: 'company', widget: 'string' }
       - { label: 'Date', name: 'date', widget: 'date' }      
