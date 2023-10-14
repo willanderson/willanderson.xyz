@@ -25,8 +25,14 @@ layout: default
       <div class="w-full">
         <h1 class="text-4xl">{{ page.title }}</h1>
       </div>
-      <div class="w-full mt-4 max-w-prose">
-        <p>{{ page.intro }}</p>
+      <div class="w-full mt-4">
+        {% capture formatted_intro %}{{ page.intro | markdownify }}{% endcapture %}
+        {% assign paragraphs = formatted_intro | split: '</p>' %}
+        {% for paragraph in paragraphs %}
+            {% if paragraph != "" %}
+                {{ paragraph | append: '</p>' | replace: '<p>', '<p class="mb-2 max-w-prose">' }}
+            {% endif %}
+        {% endfor %}
       </div>
     </div>
   </div>
