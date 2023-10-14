@@ -1,4 +1,5 @@
 ---
+status: published
 title: Sell It
 company: Squarespace
 date: 2023-09-04T16:16:10.689Z
@@ -9,7 +10,6 @@ intro: A﻿s part of a Hack week project, I worked with a small engineering team
   merchants who primarily sold products through social media and private
   messaging, we wanted to design a tool that supported expressive online selling
   without the need for a store or website.
-status: Published
 items:
   - asset: /assets/images/sellit-0102.png
     text: The starting point was Squarespace's existing product creation tool.
