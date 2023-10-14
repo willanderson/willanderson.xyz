@@ -16,6 +16,7 @@ cv:
     description: Driving growth and new product experiences for Meta Business Suite,
       a unified platform of professional and creator tools across Meta's Family
       of Apps.
+    url: https://www.meta.com/
   - company: Free Association
     title: " Design Lead"
     location: Brooklyn, NY / Remote
@@ -23,6 +24,7 @@ cv:
     description: "Embedded on Coinbase's Identity team. Collaborated with design
       leads on product vision, new feature development, and onboarding
       unification. "
+    url: https://www.freeassociation.com/
   - company: Artsy
     title: Senior Product Designer
     description: Designing new experiences for the Artsy eCommerce and Marketplace
@@ -30,6 +32,7 @@ cv:
       Purchase & Actions team .
     year: "2020"
     location: New York, NY
+    url: https://www.artsy.net/
   - company: Squarespace
     title: Product Designer
     description: "Designer on Commerce, Squarespace's all-in-one platform for
@@ -38,10 +41,12 @@ cv:
       onboarding. "
     year: 2018-2020
     location: New York, NY
+    url: https://www.squarespace.com/
   - company: Everlane
     title: Designer – Product & Brand
     year: 2015-2018
     location: San Francisco, CA
     description: "Working across creative and product to shape Everlane's online and
       retail presence. "
+    url: https://www.everlane.com/
 ---
