@@ -1,5 +1,5 @@
 ---
-status: published
+status: Published
 title: Purchase Inbox
 company: Artsy
 date: 2023-05-16T14:38:59.431Z
