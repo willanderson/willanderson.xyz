@@ -38,7 +38,7 @@ layout: default
 
 
     {% for project in site.projects %}
-      {% if project.status != "preview" %}
+      {% if project.status != "Preview" %}
         {% if published_posts_count < 2 %}
 
           <a href="{{ project.url | relative_url }}">

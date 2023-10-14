@@ -13,7 +13,7 @@ layout: default
 <section class="py-4 px-3 md:px-4 lg:px-6 mb-6">
   <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6 ">
     {% for project in site.projects %}
-    {% if project.status == 'published' %}
+    {% if project.status == 'Published' %}
     <div class="flex flex-col">
       <div class="bg-black rounded-2xl lg:p-14 md:p-14 p-6 h-full flex items-center justify-center grow">
         <a href="{{project.url | relative_url }}">

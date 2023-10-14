@@ -13,7 +13,6 @@ intro: >-
 
 
   Next, uplevel the craft and quality of the flow by introducing a new visual style that aligned with Coinbase's recent rebrand.
-status: Published
 items:
   - asset: /assets/images/cb_uo-01.png
     bg: null

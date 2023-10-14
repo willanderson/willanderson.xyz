@@ -4,12 +4,11 @@ company: Squarespace
 date: 2023-09-04T16:16:10.689Z
 hero: /assets/images/sellit-01.png
 preview: eCommerce without a website
-intro: A﻿s part of a Hack week project, I worked with a small engineering team
+intro: As part of a Hack week project, I worked with a small engineering team
   to design and build a concept app aimed at first-time sellers. Inspired by
   merchants who primarily sold products through social media and private
   messaging, we wanted to design a tool that supported expressive online selling
   without the need for a store or website.
-status: Published
 items:
   - asset: /assets/images/sellit-0102.png
     text: The starting point was Squarespace's existing product creation tool.
