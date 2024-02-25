@@ -12,10 +12,10 @@ intro: >-
   execute. 
 
 
-  The campaign centered around a central message: Denim You Can Get Behind. The company sourced high-quality Japanese denim that typically retailed for double the price. We manufactured it at a cutting-edge factory in Vietnam that used substantially less waste than typical. And the styles felt both timeliness and relevant, with cuts that were flattering across a diverse range of body types. 
+  The campaign centered around one message: Denim You Can Get Behind. The company sourced high-quality Japanese denim that typically retails for double the price. We manufactured it at a cutting-edge factory in Vietnam that used substantially less waste than the industry average. And the styles felt both timeliness and relevant, with cuts that were flattering across a diverse range of body types. 
 
 
-  To support the launch, I designed multi-week, interactive portal that both hyped the product and educated our customer's about the denim industry.  Along with housing 2 teaser commercials, the site evolved week-to-week, zooming out to reveal more details and story as the launch grew closer. In addition, my team shipped  an entirely new shopping experience for the e-commerce site (we called it Denim Shop). These updates made it easier for customers to explore our fits and preview them across different body types.
+  To support the launch, I designed a multi-week, interactive portal that hyped the product and educated our customer's about the denim industry.  Along with housing 2 teaser commercials, the site evolved week-to-week, zooming out to reveal more details and story as the launch grew closer. In addition, my team shipped  an entirely new shopping experience for the e-commerce site (we called it Denim Shop). These updates made it easier for customers to explore our fits and preview them across different body types.
 items:
   - asset: /assets/images/denim01.png
   - asset: /assets/images/denim02.png
