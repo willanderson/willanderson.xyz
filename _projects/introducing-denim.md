@@ -1,6 +1,6 @@
 ---
 status: Published
-title: Introducing Denim.
+title: Denim Launch
 company: Everlane
 date: 2016-11-11T18:43:18.089Z
 hero: /assets/images/launch_desktop.jpg
