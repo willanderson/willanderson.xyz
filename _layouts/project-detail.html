@@ -42,23 +42,30 @@ layout: default
   {% for item in page.items %}
   <!-- Item Start -->
   <div class="grid grid-cols-4 gap-x-4">
-    <div
-      class="bg-black rounded-2xl p-8 lg:col-span-3 md:col-span-3 col-span-4 justify-self-stretch	flex items-center aspect-[4/3] relative overflow-hidden max-h-screen">
+    <div class="bg-black rounded-2xl p-8 lg:col-span-3 md:col-span-3 col-span-4 justify-self-stretch flex items-center aspect-[4/3] relative overflow-hidden max-h-screen">
       <div style="background-image: url('{{ item.bg | relative_url }}')"
         class="w-full h-full absolute left-0 top-0 bg-cover bg-center bg-no-repeat">
       </div>
-      <div class="item w-full h-full flex items-center justify-center relative z-10 max-h-[80%]">
-        <img class="drop-shadow-2xl max-h-full" src="{{ item.asset | relative_url }}" />
+      <div class="item w-full h-full flex items-center justify-center relative z-10 max-h-[85%]">
+        {% assign file_extension = item.asset | split: '.' | last %}
+        {% if file_extension == 'mp4' %}
+          <video class="drop-shadow-2xl max-h-full" autoplay muted loop>
+            <source src="{{ item.asset | relative_url }}" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        {% else %}
+          <img class="drop-shadow-2xl max-h-full" src="{{ item.asset | relative_url }}" />
+        {% endif %}
       </div>
     </div>
-
+  
     <div class="col-span-4 lg:col-span-1 md:col-span-1 pt-2">
       <div class="text-sm text-zinc-500 max-w-[72ch]">
         <p>{{ item.text }}</p>
       </div>
     </div>
-
   </div>
+  
  
   <!-- Item End -->
   {% endfor %}

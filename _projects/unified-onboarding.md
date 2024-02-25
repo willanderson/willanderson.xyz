@@ -42,7 +42,7 @@ items:
   - asset: /assets/images/cb_uo-09.png
     bg: null
     text: null
-  - asset: /assets/images/cb_uo-10.png
+  - asset: https://willanderson-xyz-video.s3.amazonaws.com/CleanShot+2024-02-25+at+12.55.23.mp4
     bg: null
     text: null
 ---
