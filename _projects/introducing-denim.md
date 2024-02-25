@@ -1,5 +1,5 @@
 ---
-status: Preview
+status: Published
 title: Introducing Denim.
 company: Everlane
 date: 2016-11-11T18:43:18.089Z
