@@ -17,7 +17,8 @@
     </a>
 
     <div class="text-lg">
-        <a href="{{ '/projects/' | relative_url }}" class="mr-4">Work</a>
-        <a href="{{ '/about/' | relative_url }}" class="mr-4">Info</a>
+        <a href="{{ '/projects/' | relative_url }}" class="mr-4 {% if page.url == '/projects.html' %}underline{% endif %}">Projects</a>
+        <a href="{{ '/about/' | relative_url }}" class="mr-4 {% if page.url == '/about.html' %}underline{% endif %}">About</a>
     </div>
 </nav>
+
