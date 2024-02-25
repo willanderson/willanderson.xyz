@@ -12,6 +12,7 @@ layout: default
 
 <section class="py-4 px-3 md:px-4 lg:px-6 mb-6">
   <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6 ">
+    {% for project in site.projects %}
     {% assign sorted_projects = site.projects | where: "status", "Published" | sort: "date", "last" %}
     {% if project.status == 'Published' %}
     <div class="flex flex-col">
