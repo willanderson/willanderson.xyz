@@ -20,8 +20,16 @@ items:
   - asset: /assets/images/denim01.png
   - asset: /assets/images/denim02.png
   - asset: /assets/images/denim03.png
+    text: "Early design concepts for the factory landing page "
   - asset: /assets/images/denim04.png
+    text: "Snippets from the factory landing page, which highlighted the denim's
+      sustainable manufacturing process. "
   - asset: /assets/images/denim05.png
+    text: "The custom denim shop featured expanded product details, a comparison
+      tool, and additional editorial moments. "
   - asset: /assets/images/denim06.png
+    text: "Marketing emails and social collateral from the hype campaign.  "
   - asset: /assets/images/denim07.png
+    text: "A few days before the launch, we shut down the Everlane website in order
+      to promote the product. "
 ---
