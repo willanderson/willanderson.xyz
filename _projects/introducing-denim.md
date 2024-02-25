@@ -20,9 +20,11 @@ items:
   - asset: /assets/images/denim01.png
   - asset: /assets/images/denim02.png
   - asset: https://willanderson-xyz-video.s3.amazonaws.com/teaser-hero.mov
+    text: The denim's teaser site featured a countdown over the 2-week drip campaign.
   - asset: /assets/images/denim03.png
     text: "Early design concepts for the factory landing page "
   - asset: https://willanderson-xyz-video.s3.amazonaws.com/factory-ful+scroll.mov
+    text: Full scroll experience for the denim factory landing page
   - asset: /assets/images/denim04.png
     text: "Snippets from the factory landing page, which highlighted the denim's
       sustainable manufacturing process. "
