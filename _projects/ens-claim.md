@@ -17,10 +17,10 @@ items:
   - asset: /assets/images/ens-02.png
     bg: null
     text: null
-  - asset: /assets/images/ens-03.png
+  - asset: https://willanderson-xyz-video.s3.amazonaws.com/CleanShot+2024-02-25+at+14.58.10.mp4
     bg: null
     text: null
-  - asset: /assets/images/ens-04.png
+  - asset: /assets/images/ens-03.png
     bg: null
     text: null
   - asset: /assets/images/ens-05.png
@@ -29,4 +29,5 @@ items:
   - asset: /assets/images/ens-06.png
     bg: null
     text: null
+  - asset: https://willanderson-xyz-video.s3.amazonaws.com/CleanShot+2024-02-25+at+14.54.47.mp4
 ---
