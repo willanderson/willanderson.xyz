@@ -4,7 +4,7 @@ title: Introducing Denim.
 company: Everlane
 date: 2016-11-11T18:43:18.089Z
 hero: /assets/images/launch_desktop.jpg
-preview: "The largest launch in Everlane's history. "
+preview: "The most ambitious launch in Everlane's history. "
 intro: >-
   Denim was an entirely new category for Everlane, and one of the most ambitious
   campaigns I was involved in. The product took more than 2 years to develop,
