@@ -19,8 +19,10 @@ intro: >-
 items:
   - asset: /assets/images/denim01.png
   - asset: /assets/images/denim02.png
+  - asset: https://willanderson-xyz-video.s3.amazonaws.com/teaser-hero.mov
   - asset: /assets/images/denim03.png
     text: "Early design concepts for the factory landing page "
+  - asset: https://willanderson-xyz-video.s3.amazonaws.com/factory-ful+scroll.mov
   - asset: /assets/images/denim04.png
     text: "Snippets from the factory landing page, which highlighted the denim's
       sustainable manufacturing process. "
