@@ -17,5 +17,11 @@ intro: >-
 
   To support the launch, I designed multi-week, interactive portal that both hyped the product and educated our customer's about the denim industry.  Along with housing 2 teaser commercials, the site evolved week-to-week, zooming out to reveal more details and story as the launch grew closer. In addition, my team shipped  an entirely new shopping experience for the e-commerce site (we called it Denim Shop). These updates made it easier for customers to explore our fits and preview them across different body types.
 items:
-  - {}
+  - asset: /assets/images/denim01.png
+  - asset: /assets/images/denim02.png
+  - asset: /assets/images/denim03.png
+  - asset: /assets/images/denim04.png
+  - asset: /assets/images/denim05.png
+  - asset: /assets/images/denim06.png
+  - asset: /assets/images/denim07.png
 ---
