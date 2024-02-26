@@ -3,7 +3,7 @@ status: Published
 title: Purchase Inbox
 company: Artsy
 date: 2023-05-16T14:38:59.431Z
-hero: /assets/images/frame-904.png
+hero: /assets/images/texts.png
 preview: "Revamping Artsy's Inquiry System "
 intro: >-
   Artwork on Artsy can be acquired in two ways: through a conventional
