@@ -31,26 +31,24 @@ layout: default
   <a href="{{ '/projects/' | relative_url }}">
     <h2 class="lg:text-4xl text-3xl py-4">Recently added -></h2>
   </a>
-  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-3 md:gap-4 lg:gap-6">
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4">
 
   {% assign published_posts_count = 0 %}
 
 
 
     {% for project in site.projects %}
-      {% if project.status != "Preview" %}
         {% if published_posts_count < 2 %}
-
-          <a href="{{ project.url | relative_url }}">
+        {% include project-preview.html project=project show_details=false %}
+          <!-- <a href="{{ project.url | relative_url }}">
             <div class="bg-black rounded-2xl lg:p-14 md:p-14 p-6 h-full flex items-center justify-center">
               <img class="object-contain aspect-[4/3]" src="{{ project.hero | relative_url }}" />
             </div>
-          </a>
+          </a> -->
            {% assign published_posts_count = published_posts_count | plus: 1 %}
           {% else %}
           {% break %}
         {% endif %}
-      {% endif %}
     {% endfor %}
   </div>
 </section>

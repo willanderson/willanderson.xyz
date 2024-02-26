@@ -4,6 +4,7 @@ title: Purchase Inbox
 company: Artsy
 date: 2023-05-16T14:38:59.431Z
 hero: /assets/images/texts.png
+hero_style: background
 preview: "Revamping Artsy's Inquiry System "
 intro: >-
   Artwork on Artsy can be acquired in two ways: through a conventional
