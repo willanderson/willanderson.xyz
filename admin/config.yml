@@ -17,6 +17,7 @@ collections:
       - { label: 'Company', name: 'company', widget: 'string' }
       - { label: 'Date', name: 'date', widget: 'date' }      
       - { label: 'Hero', name: 'hero', widget: 'image' }
+      - { label: 'Hero Style', name: 'hero_style', widget: 'select', options: ["background", "centered"], default: "centered" }
       - { label: 'Preview', name: 'preview', widget: 'string' }
       - { label: 'Introduction', name: 'intro', widget: 'markdown' }
       - label: 'Items'
