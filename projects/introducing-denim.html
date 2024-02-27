@@ -209,14 +209,12 @@
         
         <!-- Check if the media should use a background style -->
         
-        <!-- Render centered media -->
-        <div class="item w-full h-full flex items-center justify-center relative z-10 max-h-[85%]">
-            
-            <!-- Check if the asset is an image or video file -->
-            
-            <img class="drop-shadow-2xl max-h-full" src="/assets/images/denim03.png" />
-            
-        </div>
+          
+          <!-- Check for video file extensions -->
+          
+              <!-- Display as background image if not a video file -->
+              <div style="background-image: url('/assets/images/denim03.png')" class="w-full h-full absolute left-0 top-0 bg-cover bg-center bg-no-repeat rounded-2xl"></div>
+          
         
     </div>
     <!-- Media caption -->
