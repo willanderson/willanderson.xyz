@@ -81,7 +81,7 @@
         
         
             
-                <p class="mb-2 max-w-prose">At Squarespace, I led a project to redesign the product creation flow—a core experience that users interacted with on a weekly (sometimes daily) basis. The goal was to radically simplify how users managed their online inventory, and create a seamless editing experience across web and mobile.</p>
+                <p class="mb-2 max-w-prose">At Squarespace, I led a redesign of the product creation flow—a core experience that users interact with on a weekly (sometimes daily) basis. The goal was to radically simplify how users managed their online inventory, and create a seamless editing experience across web and mobile.</p>
             
         
             
@@ -279,14 +279,12 @@
         
         <!-- Check if the media should use a background style -->
         
-        <!-- Render centered media -->
-        <div class="item w-full h-full flex items-center justify-center relative z-10 max-h-[85%]">
-            
-            <!-- Check if the asset is an image or video file -->
-            
-            <img class="drop-shadow-2xl max-h-full" src="/assets/images/product-composer/07-alt1.png" />
-            
-        </div>
+          
+          <!-- Check for video file extensions -->
+          
+              <!-- Display as background image if not a video file -->
+              <div style="background-image: url('/assets/images/product-composer/07-alt1.png')" class="w-full h-full absolute left-0 top-0 bg-cover bg-center bg-no-repeat rounded-2xl"></div>
+          
         
     </div>
     <!-- Media caption -->
@@ -313,17 +311,16 @@
         
         <!-- Check if the media should use a background style -->
         
-        <!-- Render centered media -->
-        <div class="item w-full h-full flex items-center justify-center relative z-10 max-h-[85%]">
-            
-            <!-- Check if the asset is an image or video file -->
-            
-            <video autoplay playsinline muted loop class="max-h-full lazy-video rounded-2xl">
-                <source src="https://willanderson-xyz-video.s3.amazonaws.com/CleanShot+2024-02-27+at+12.18.10.mp4" type="video/mp4">
-                Your browser does not support the video tag.
+          
+          <!-- Check for video file extensions -->
+          
+          <div class="videoContainer absolute top-0 left-0 w-full h-full">
+            <video autoplay muted loop playsinline class="w-full h-full object-cover lazy-video">
+              <source src="https://willanderson-xyz-video.s3.amazonaws.com/CleanShot+2024-02-27+at+12.18.10.mp4">
+              Your browser does not support the video tag.
             </video>
-            
-        </div>
+          </div>  
+          
         
     </div>
     <!-- Media caption -->
