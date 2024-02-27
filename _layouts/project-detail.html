@@ -45,38 +45,57 @@ layout: default
 </section>
 
 <section id="gallery" class="py-4 px-3 md:px-4 lg:px-6 mb-4 grid grid-cols-1 gap-y-8">
+
   {% for item in page.items %}
+  
   <!-- Item Start -->
+  
   <div class="grid grid-cols-4 gap-x-4">
-    <div
-      class="bg-black rounded-2xl p-4 md:p-8 lg:p-8 lg:col-span-3 md:col-span-3 col-span-4 justify-self-stretch flex items-center aspect-[4/3] relative overflow-hidden max-h-screen">
-      <div style="background-image: url('{{ item.bg | relative_url }}')"
-        class="w-full h-full absolute left-0 top-0 bg-cover bg-center bg-no-repeat">
-      </div>
-      <div class="item w-full h-full flex items-center justify-center relative z-10 max-h-[85%]">
-        {% assign file_extension = item.asset | split: '.' | last %}
-        <!-- Check if the asset is an image or video file -->
-        {% if file_extension == 'mp4' or file_extension == 'webm' or file_extension == 'ogv' or file_extension == 'mov'
-        %}
-        <video class="max-h-full lazy-video rounded-2xl" autoplay playsinline muted loop>
-          <source src="{{ item.asset | relative_url }}" type="video/mp4">
-          Your browser does not support the video tag.
-        </video>
+    
+    <div class="bg-black rounded-2xl p-4 md:p-8 lg:p-8 lg:col-span-3 md:col-span-3 col-span-4 justify-self-stretch flex items-center min-h-[480px] relative overflow-hidden max-h-screen">
+        
+        <!-- Check if the media should use a background style -->
+        {% if item.media_style == 'background' %}
+          {% assign file_extension = item.asset | split: '.' | last %}
+          <!-- Check for video file extensions -->
+          {% if file_extension == 'mp4' or file_extension == 'mov' or file_extension == 'ogv' or file_extension == 'webm' %}
+          <div class="videoContainer absolute top-0 left-0 w-full h-full">
+            <video autoplay muted loop playsinline class="w-full h-full object-cover lazy-video">
+              <source src="{{ item.asset | relative_url }}">
+              Your browser does not support the video tag.
+            </video>
+          </div>  
+          {% else %}
+              <!-- Display as background image if not a video file -->
+              <div style="background-image: url('{{ item.asset | relative_url }}')" class="w-full h-full absolute left-0 top-0 bg-cover bg-center bg-no-repeat rounded-2xl"></div>
+          {% endif %}
         {% else %}
-        <img class="drop-shadow-2xl max-h-full" src="{{ item.asset | relative_url }}" />
+        <!-- Render centered media -->
+        <div class="item w-full h-full flex items-center justify-center relative z-10 max-h-[85%]">
+            {% assign file_extension = item.asset | split: '.' | last %}
+            <!-- Check if the asset is an image or video file -->
+            {% if file_extension == 'mp4' or file_extension == 'webm' or file_extension == 'ogv' or file_extension == 'mov' %}
+            <video autoplay playsinline muted loop class="max-h-full lazy-video rounded-2xl">
+                <source src="{{ item.asset | relative_url }}" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            {% else %}
+            <img class="drop-shadow-2xl max-h-full" src="{{ item.asset | relative_url }}" />
+            {% endif %}
+        </div>
         {% endif %}
-      </div>
     </div>
     <!-- Media caption -->
     {% if item.text %}
     <div class="col-span-4 lg:col-span-1 md:col-span-1 pt-2">
-      <div class="text-sm text-zinc-500 max-w-[72ch]">
-        <p>{{ item.text }}</p>
-      </div>
+        <div class="text-sm text-zinc-500 max-w-[72ch]">
+            <p>{{ item.text }}</p>
+        </div>
     </div>
     {% endif %}
-  </div>
-  </div>
+</div>
+
+
 
 
   <!-- Item End -->

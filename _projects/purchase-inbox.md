@@ -17,12 +17,14 @@ intro: >-
 
   My efforts centered on enhancing this experience, specifically honing in on the initial inquiry—the inaugural message a user sends to a gallery.
 items:
-  - bg: /assets/images/1012.png
+  - media_style: background
+    asset: /assets/images/1012.png
   - asset: /assets/images/frame-864.png
   - asset: /assets/images/frame-865.png
   - asset: /assets/images/frame-866.png
   - asset: /assets/images/message-index-5.png
-  - bg: /assets/images/1011.png
+  - media_style: background
+    asset: /assets/images/1011.png
   - asset: /assets/images/1014.png
   - asset: /assets/images/3.png
   - asset: /assets/images/frame-875.png

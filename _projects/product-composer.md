@@ -12,7 +12,6 @@ intro: At Squarespace, I led a project to redesign the product creation flow—a
   inventory, and create a seamless editing experience across web and mobile.
 items:
   - asset: /assets/images/product-composer/01-Top.png
-    bg: /assets/images/product-composer/01-Bg.png
     text: The legacy creation tool (above) was hacked together on top of the blog
       tool, and was over 6-years old. After talking to users and auditing the
       flow, the team identified some key concerns

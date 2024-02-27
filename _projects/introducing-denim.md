@@ -18,12 +18,14 @@ intro: >-
   To support the launch, I designed a multi-week, interactive portal that hyped the product and educated our customer's about the denim industry.  Along with housing 2 teaser commercials, the site evolved week-to-week, zooming out to reveal more details and story as the launch grew closer. In addition, my team shipped  an entirely new shopping experience for the e-commerce site (we called it Denim Shop). These updates made it easier for customers to explore our fits and preview them across different body types.
 items:
   - asset: /assets/images/denim01.png
-  - asset: /assets/images/denim02.png
+  - media_style: background
+    asset: /assets/images/denim02.png
   - asset: https://willanderson-xyz-video.s3.amazonaws.com/teaser-hero.mov
     text: The denim's teaser site featured a countdown over the 2-week drip campaign.
   - asset: /assets/images/denim03.png
     text: "Early design concepts for the factory landing page "
-  - asset: https://willanderson-xyz-video.s3.amazonaws.com/factory-ful+scroll.mov
+  - media_style: background
+    asset: https://willanderson-xyz-video.s3.amazonaws.com/factory-ful+scroll.mov
     text: Full scroll experience for the denim factory landing page
   - asset: /assets/images/denim04.png
     text: "Snippets from the factory landing page, which highlighted the denim's
