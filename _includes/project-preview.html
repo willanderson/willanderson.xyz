@@ -1,7 +1,7 @@
 <div class="flex flex-col w-full">
     <!-- Project Thumbnail -->
     <a href="{{ project.url | relative_url }}"
-        class="rounded-2xl p-6 h-full flex items-center justify-center grow relative overflow-hidden min-h-[380px] aspect-[3/2] {% unless project.hero_style == 'background' %} bg-black {% endunless %}">
+        class="w-full rounded-2xl p-6 h-full flex items-center justify-center grow relative overflow-hidden min-h-[380px] aspect-[3/2] {% unless project.hero_style == 'background' %} bg-black {% endunless %}">
 
         {% if project.hero_style == 'background' %}
         <div style="background-image: url('{{ project.hero | relative_url }}')"
