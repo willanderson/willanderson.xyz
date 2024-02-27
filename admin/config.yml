@@ -24,6 +24,7 @@ collections:
         name: 'items'
         widget: 'list'
         fields:
+          - { label: 'Style', name: 'media_style', widget: 'select', options: ["background", "centered"], default: "centered" }
           - { label: 'Asset', name: 'asset', widget: 'image', required: false }
           - { label: 'Background', name: 'bg', widget: 'image', required: false }
           - { label: 'Caption', name: 'text', widget: 'text', required: false }
