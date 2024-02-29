@@ -4,7 +4,7 @@ title: Sell It
 company: Squarespace
 date: 2023-09-04T16:16:10.689Z
 hero: /assets/images/sellit-01.png
-hero_style: background
+hero_style: centered
 preview: eCommerce without a website
 intro: As part of a Hack week project, I worked with a small engineering team to
   design and build a concept app aimed at first-time sellers. Inspired by
