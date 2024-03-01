@@ -49,12 +49,12 @@ collections:
               - { label: 'Location', name: 'location', widget: 'string', required: true }
               - { label: 'Url', name: 'url', widget: 'string', required: true }
               - { label: 'Description', name: 'description', widget: 'text', required: true }
-              - label: 'Sections'
-                  name: 'sections'
-                  widget: 'list'
-                  fields:
-                    - { label: 'Title', name: 'title', widget: 'text' }
-                    - { label: 'Content', name: 'content', widget: 'markdown' }
+          - label: 'Sections'
+              name: 'sections'
+              widget: 'list'
+              fields:
+                - { label: 'Title', name: 'title', widget: 'text' }
+                - { label: 'Content', name: 'content', widget: 'markdown' }
         
               
 
