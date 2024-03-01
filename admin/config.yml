@@ -1,5 +1,4 @@
 # config.yml
-
 backend:
   name: git-gateway
   branch: main # Branch to update (optional; defaults to master)
@@ -50,11 +49,12 @@ collections:
               - { label: 'Url', name: 'url', widget: 'string', required: true }
               - { label: 'Description', name: 'description', widget: 'text', required: true }
           - label: 'Sections'
-              name: 'sections'
-              widget: 'list'
-              fields:
-                - { label: 'Title', name: 'title', widget: 'text' }
-                - { label: 'Content', name: 'content', widget: 'markdown' }
+            name: 'sections'
+            widget: 'list'
+            fields:
+              - { label: 'Title', name: 'title', widget: 'text' }
+              - { label: 'Content', name: 'content', widget: 'markdown' }
+
         
               
 
