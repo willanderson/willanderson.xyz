@@ -106,3 +106,15 @@ background-image: url('data:image/svg+xml,<svg width="32" height="32" viewBox="0
 .intro p {
     max-width: 65ch;
 }
+
+/* About */
+
+
+.about ul li {
+    list-style: disc;
+    margin-left: 2.5rem;
+}
+
+.wyswg a {
+    text-decoration: underline;
+}
