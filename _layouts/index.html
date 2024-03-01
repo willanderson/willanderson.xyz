@@ -10,7 +10,7 @@ layout: default
     </span>
 
     <span class="whitespace-nowrap">
-      <span class="artsy lg:w-12 lg:h-12  w-8 h-8 bg-no-repeat bg-left-center inline-block mr-1 bg-cover bg-[center_top_0.25rem]"></span>Artsy,
+      <span class="artsy dark:artsy-dark lg:w-12 lg:h-12  w-8 h-8 bg-no-repeat bg-left-center inline-block mr-1 bg-cover bg-[center_top_0.25rem]"></span>Artsy,
     </span>
 
     <span class="whitespace-nowrap">
@@ -40,11 +40,6 @@ layout: default
     {% for project in site.projects %}
         {% if published_posts_count < 2 %}
         {% include project-preview.html project=project show_details=false %}
-          <!-- <a href="{{ project.url | relative_url }}">
-            <div class="bg-black rounded-2xl lg:p-14 md:p-14 p-6 h-full flex items-center justify-center">
-              <img class="object-contain aspect-[4/3]" src="{{ project.hero | relative_url }}" />
-            </div>
-          </a> -->
            {% assign published_posts_count = published_posts_count | plus: 1 %}
           {% else %}
           {% break %}
