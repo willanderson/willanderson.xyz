@@ -20,12 +20,19 @@ items:
   - media_style: background
     asset: /assets/images/1012.png
   - asset: /assets/images/frame-864.png
+    media_style: centered
   - asset: /assets/images/frame-865.png
+    media_style: centered
   - asset: /assets/images/frame-866.png
+    media_style: centered
   - asset: /assets/images/message-index-5.png
+    media_style: centered
   - media_style: background
     asset: /assets/images/1011.png
   - asset: /assets/images/1014.png
+    media_style: background
   - asset: /assets/images/3.png
+    media_style: centered
   - asset: /assets/images/frame-875.png
+    media_style: centered
 ---
