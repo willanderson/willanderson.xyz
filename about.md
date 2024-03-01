@@ -49,4 +49,24 @@ cv:
     description: "Working across creative and product to shape Everlane's online and
       retail presence. "
     url: https://www.everlane.com/
+sections:
+  - title: About this site
+    content: >-
+      I designed and built this site over a few months in 2023. The site is
+      built on top of [Jekyll](https://jekyllrb.com/), a static-site generator,
+      and it’s hosted for free on [GitHub Pages](https://pages.github.com/)
+      (though I am also using AWS to host some of the larger assets). I use
+      [Netlify](https://www.netlify.com/) to deploy the site, and [Decap
+      CMS](https://decapcms.org/docs/intro/) to manage its contents.
+
+
+      There's very little custom CSS. For the most part, I rely on [Tailwinds](https://tailwindcss.com/) for styling and responsive layouts. There’s a tiny bit of JavaScript that [ChatGBT](https://openai.com/blog/chatgpt) helped me with (Thanks babe 😘). 
+
+
+      The site is basically free to run, and pretty easy to update and maintain. For anyone looking to follow a similar approach, here are two guides that proved very helpful: 
+
+
+      * [Starting a blank Jekyll site with Tailwind CSS in 2022](https://mzrn.sh/2022/04/09/starting-a-blank-jekyll-site-with-tailwind-css-in-2022/)
+
+      * [Netlify CMS for Jekyll Site](https://medium.com/codex/netlify-cms-for-jekyll-site-31f728ac61c7)
 ---
