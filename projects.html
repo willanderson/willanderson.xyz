@@ -26,14 +26,23 @@
 </head>
 
 
-<body>
-  <nav class="flex justify-between items-center px-3 md:px-4 lg:px-6 w-full sticky top-0 bg-white z-50">
+<body class="bg-white dark:bg-black text-black dark:text-white ">
+  <nav class="flex justify-between items-center px-3 md:px-4 lg:px-6 w-full sticky top-0 bg-white bg-inherit z-50">
     <a href="/">
         <div class="flex flex-row items-center">
             <div class="mr-2">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <circle cx="12" cy="12" r="12" fill="#FFCD29" />
-                </svg>
+                <div class="block dark:hidden">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="12" cy="12" r="12" fill="#FFCD29" />
+                    </svg>
+                </div>
+                <div class="hidden dark:block">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="12" cy="12" r="12" fill="#F09135" />
+                    </svg>
+                </div>
+  
+               
             </div>
             <div id="first" class="overflow-hidden h-14 flex items-center relative">
                 <div class="text-lg overflow-hidden">
@@ -65,7 +74,7 @@
        <div class="flex flex-col w-full">
     <!-- Project Thumbnail -->
     <a href="/projects/introducing-denim.html"
-        class="w-full rounded-2xl p-6 h-full flex items-center justify-center grow relative overflow-hidden min-h-[380px] aspect-[3/2]  bg-black ">
+        class="w-full rounded-2xl p-6 h-full flex items-center justify-center grow relative overflow-hidden min-h-[380px] aspect-[3/2]  bg-black dark:bg-zinc-900 ">
 
         
         <img class="w-full h-full object-contain" src="/assets/images/launch_desktop.jpg" />
@@ -75,7 +84,7 @@
     <!-- Project Details -->
     
     <div class="mt-3 flex flex-col">
-        <p class="text-lg leading-tight text-stone-400">
+        <p class="text-lg leading-tight text-zinc-500 dark:text-zinc-400">
             Everlane
         </p>
         <a href="/projects/introducing-denim.html">
@@ -104,7 +113,7 @@
     <!-- Project Details -->
     
     <div class="mt-3 flex flex-col">
-        <p class="text-lg leading-tight text-stone-400">
+        <p class="text-lg leading-tight text-zinc-500 dark:text-zinc-400">
             Artsy
         </p>
         <a href="/projects/purchase-inbox.html">
@@ -122,7 +131,7 @@
        <div class="flex flex-col w-full">
     <!-- Project Thumbnail -->
     <a href="/projects/unified-onboarding.html"
-        class="w-full rounded-2xl p-6 h-full flex items-center justify-center grow relative overflow-hidden min-h-[380px] aspect-[3/2]  bg-black ">
+        class="w-full rounded-2xl p-6 h-full flex items-center justify-center grow relative overflow-hidden min-h-[380px] aspect-[3/2]  bg-black dark:bg-zinc-900 ">
 
         
         <img class="w-full h-full object-contain" src="/assets/images/05.png" />
@@ -132,7 +141,7 @@
     <!-- Project Details -->
     
     <div class="mt-3 flex flex-col">
-        <p class="text-lg leading-tight text-stone-400">
+        <p class="text-lg leading-tight text-zinc-500 dark:text-zinc-400">
             Coinbase
         </p>
         <a href="/projects/unified-onboarding.html">
@@ -150,7 +159,7 @@
        <div class="flex flex-col w-full">
     <!-- Project Thumbnail -->
     <a href="/projects/pdp-engine.html"
-        class="w-full rounded-2xl p-6 h-full flex items-center justify-center grow relative overflow-hidden min-h-[380px] aspect-[3/2]  bg-black ">
+        class="w-full rounded-2xl p-6 h-full flex items-center justify-center grow relative overflow-hidden min-h-[380px] aspect-[3/2]  bg-black dark:bg-zinc-900 ">
 
         
         <img class="w-full h-full object-contain" src="/assets/images/pdp-01.png" />
@@ -160,7 +169,7 @@
     <!-- Project Details -->
     
     <div class="mt-3 flex flex-col">
-        <p class="text-lg leading-tight text-stone-400">
+        <p class="text-lg leading-tight text-zinc-500 dark:text-zinc-400">
             Squarespace
         </p>
         <a href="/projects/pdp-engine.html">
@@ -178,7 +187,7 @@
        <div class="flex flex-col w-full">
     <!-- Project Thumbnail -->
     <a href="/projects/ens-claim.html"
-        class="w-full rounded-2xl p-6 h-full flex items-center justify-center grow relative overflow-hidden min-h-[380px] aspect-[3/2]  bg-black ">
+        class="w-full rounded-2xl p-6 h-full flex items-center justify-center grow relative overflow-hidden min-h-[380px] aspect-[3/2]  bg-black dark:bg-zinc-900 ">
 
         
         <img class="w-full h-full object-contain" src="/assets/images/ens-hero.png" />
@@ -188,7 +197,7 @@
     <!-- Project Details -->
     
     <div class="mt-3 flex flex-col">
-        <p class="text-lg leading-tight text-stone-400">
+        <p class="text-lg leading-tight text-zinc-500 dark:text-zinc-400">
             Coinbase
         </p>
         <a href="/projects/ens-claim.html">
@@ -206,7 +215,7 @@
        <div class="flex flex-col w-full">
     <!-- Project Thumbnail -->
     <a href="/projects/sell-it.html"
-        class="w-full rounded-2xl p-6 h-full flex items-center justify-center grow relative overflow-hidden min-h-[380px] aspect-[3/2]  bg-black ">
+        class="w-full rounded-2xl p-6 h-full flex items-center justify-center grow relative overflow-hidden min-h-[380px] aspect-[3/2]  bg-black dark:bg-zinc-900 ">
 
         
         <img class="w-full h-full object-contain" src="/assets/images/sellit-01.png" />
@@ -216,7 +225,7 @@
     <!-- Project Details -->
     
     <div class="mt-3 flex flex-col">
-        <p class="text-lg leading-tight text-stone-400">
+        <p class="text-lg leading-tight text-zinc-500 dark:text-zinc-400">
             Squarespace
         </p>
         <a href="/projects/sell-it.html">
@@ -234,7 +243,7 @@
        <div class="flex flex-col w-full">
     <!-- Project Thumbnail -->
     <a href="/projects/product-composer.html"
-        class="w-full rounded-2xl p-6 h-full flex items-center justify-center grow relative overflow-hidden min-h-[380px] aspect-[3/2]  bg-black ">
+        class="w-full rounded-2xl p-6 h-full flex items-center justify-center grow relative overflow-hidden min-h-[380px] aspect-[3/2]  bg-black dark:bg-zinc-900 ">
 
         
         <img class="w-full h-full object-contain" src="/assets/images/03.png" />
@@ -244,7 +253,7 @@
     <!-- Project Details -->
     
     <div class="mt-3 flex flex-col">
-        <p class="text-lg leading-tight text-stone-400">
+        <p class="text-lg leading-tight text-zinc-500 dark:text-zinc-400">
             Squarespace
         </p>
         <a href="/projects/product-composer.html">
@@ -260,7 +269,7 @@
 
     
   </div>
-</section> <footer class="py-4 px-3 md:px-4 lg:px-6 flex items-start flex-col min-h-[30vh]  border-t border-neutral-900">
+</section> <footer class="py-4 px-3 md:px-4 lg:px-6 flex items-start flex-col min-h-[30vh]  border-t border-neutral-900 dark:border-neutral-400">
     <!-- <p class="lg:text-4xl text-3xl max-w-prose py-4">    
         ✍ Say hello — <br>
         <a class="underline" href="mailto:wmaxand@gmail.com">wmaxand@gmail.com</a>

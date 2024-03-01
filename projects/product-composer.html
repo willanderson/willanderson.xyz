@@ -26,14 +26,23 @@
 </head>
 
 
-<body>
-  <nav class="flex justify-between items-center px-3 md:px-4 lg:px-6 w-full sticky top-0 bg-white z-50">
+<body class="bg-white dark:bg-black text-black dark:text-white ">
+  <nav class="flex justify-between items-center px-3 md:px-4 lg:px-6 w-full sticky top-0 bg-white bg-inherit z-50">
     <a href="/">
         <div class="flex flex-row items-center">
             <div class="mr-2">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <circle cx="12" cy="12" r="12" fill="#FFCD29" />
-                </svg>
+                <div class="block dark:hidden">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="12" cy="12" r="12" fill="#FFCD29" />
+                    </svg>
+                </div>
+                <div class="hidden dark:block">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="12" cy="12" r="12" fill="#F09135" />
+                    </svg>
+                </div>
+  
+               
             </div>
             <div id="first" class="overflow-hidden h-14 flex items-center relative">
                 <div class="text-lg overflow-hidden">
@@ -72,7 +81,7 @@
   <div class="flex w-full">
     <div class="flex flex-col max-w-2xl lg:px-2">
       <div class="w-full">
-        <h2 class="text-xl text-zinc-500">Squarespace</h2>
+        <h2 class="text-xl text-zinc-500 dark:text-zinc-400">Squarespace</h2>
       </div>
       <div class="w-full">
         <h1 class="text-4xl">Product Composer</h1>
@@ -105,7 +114,7 @@
   <div class="grid grid-cols-4 gap-x-4">
 
     <div
-      class="bg-black rounded-2xl p-4 md:p-8 lg:p-8 lg:col-span-3 md:col-span-3 col-span-4 justify-self-stretch flex items-center min-h-[480px] lg:min-h-[700px] relative overflow-hidden max-h-screen">
+      class="bg-black dark:bg-zinc-900  rounded-2xl p-4 md:p-8 lg:p-8 lg:col-span-3 md:col-span-3 col-span-4 justify-self-stretch flex items-center min-h-[480px] lg:min-h-[700px] relative overflow-hidden max-h-screen">
 
       <!-- Check if the media should use a background style -->
       
@@ -122,7 +131,7 @@
     <!-- Media caption -->
     
     <div class="col-span-4 lg:col-span-1 md:col-span-1 pt-2">
-      <div class="text-sm text-zinc-500 max-w-[72ch]">
+      <div class="text-sm text-zinc-500 dark:text-zinc-300 max-w-[72ch]">
         <p>Originally, the product creation tool was hacked together atop the existing Blog post composer, leading to various inconsistencies and challenges. These issues significantly complicated the product creation and editing process, making it both tedious and less intuitive.</p>
       </div>
     </div>
@@ -140,7 +149,7 @@
   <div class="grid grid-cols-4 gap-x-4">
 
     <div
-      class="bg-black rounded-2xl p-4 md:p-8 lg:p-8 lg:col-span-3 md:col-span-3 col-span-4 justify-self-stretch flex items-center min-h-[480px] lg:min-h-[700px] relative overflow-hidden max-h-screen">
+      class="bg-black dark:bg-zinc-900  rounded-2xl p-4 md:p-8 lg:p-8 lg:col-span-3 md:col-span-3 col-span-4 justify-self-stretch flex items-center min-h-[480px] lg:min-h-[700px] relative overflow-hidden max-h-screen">
 
       <!-- Check if the media should use a background style -->
       
@@ -160,7 +169,7 @@
     <!-- Media caption -->
     
     <div class="col-span-4 lg:col-span-1 md:col-span-1 pt-2">
-      <div class="text-sm text-zinc-500 max-w-[72ch]">
+      <div class="text-sm text-zinc-500 dark:text-zinc-300 max-w-[72ch]">
         <p>One of my primary objectives was to refine the tool's IA. The redesigned layout now features a clean, vertical stack with strategically organized sections and a logical sequence, improving user navigation and interaction.</p>
       </div>
     </div>
@@ -178,7 +187,7 @@
   <div class="grid grid-cols-4 gap-x-4">
 
     <div
-      class="bg-black rounded-2xl p-4 md:p-8 lg:p-8 lg:col-span-3 md:col-span-3 col-span-4 justify-self-stretch flex items-center min-h-[480px] lg:min-h-[700px] relative overflow-hidden max-h-screen">
+      class="bg-black dark:bg-zinc-900  rounded-2xl p-4 md:p-8 lg:p-8 lg:col-span-3 md:col-span-3 col-span-4 justify-self-stretch flex items-center min-h-[480px] lg:min-h-[700px] relative overflow-hidden max-h-screen">
 
       <!-- Check if the media should use a background style -->
       
@@ -195,7 +204,7 @@
     <!-- Media caption -->
     
     <div class="col-span-4 lg:col-span-1 md:col-span-1 pt-2">
-      <div class="text-sm text-zinc-500 max-w-[72ch]">
+      <div class="text-sm text-zinc-500 dark:text-zinc-300 max-w-[72ch]">
         <p>To further declutter the interface, we implemented progressive disclosure for specific fields. For instance, the option to add a discounted price now only becomes visible when a product is marked as 'On Sale,' simplifying the user's decision-making process.
 
 </p>
@@ -215,7 +224,7 @@
   <div class="grid grid-cols-4 gap-x-4">
 
     <div
-      class="bg-black rounded-2xl p-4 md:p-8 lg:p-8 lg:col-span-3 md:col-span-3 col-span-4 justify-self-stretch flex items-center min-h-[480px] lg:min-h-[700px] relative overflow-hidden max-h-screen">
+      class="bg-black dark:bg-zinc-900  rounded-2xl p-4 md:p-8 lg:p-8 lg:col-span-3 md:col-span-3 col-span-4 justify-self-stretch flex items-center min-h-[480px] lg:min-h-[700px] relative overflow-hidden max-h-screen">
 
       <!-- Check if the media should use a background style -->
       
@@ -232,7 +241,7 @@
     <!-- Media caption -->
     
     <div class="col-span-4 lg:col-span-1 md:col-span-1 pt-2">
-      <div class="text-sm text-zinc-500 max-w-[72ch]">
+      <div class="text-sm text-zinc-500 dark:text-zinc-300 max-w-[72ch]">
         <p>The original composer was laden with features that, while useful, overwhelmed the interface. My strategy involved reclassifying these numerous features into optional "add-ons," accessible from a unified section. This approach preserved functionality while maintaining a minimalist default interface.</p>
       </div>
     </div>
@@ -250,7 +259,7 @@
   <div class="grid grid-cols-4 gap-x-4">
 
     <div
-      class="bg-black rounded-2xl p-4 md:p-8 lg:p-8 lg:col-span-3 md:col-span-3 col-span-4 justify-self-stretch flex items-center min-h-[480px] lg:min-h-[700px] relative overflow-hidden max-h-screen">
+      class="bg-black dark:bg-zinc-900  rounded-2xl p-4 md:p-8 lg:p-8 lg:col-span-3 md:col-span-3 col-span-4 justify-self-stretch flex items-center min-h-[480px] lg:min-h-[700px] relative overflow-hidden max-h-screen">
 
       <!-- Check if the media should use a background style -->
       
@@ -267,7 +276,7 @@
     <!-- Media caption -->
     
     <div class="col-span-4 lg:col-span-1 md:col-span-1 pt-2">
-      <div class="text-sm text-zinc-500 max-w-[72ch]">
+      <div class="text-sm text-zinc-500 dark:text-zinc-300 max-w-[72ch]">
         <p>A significant breakthrough in our project was the overhaul of how product variants are created and managed. Previously, each variant required manual entry, a tedious process for users. The redesigned Product Composer now enables bulk generation of SKUs with a single click, accompanied by a convenient web preview feature.</p>
       </div>
     </div>
@@ -285,7 +294,7 @@
   <div class="grid grid-cols-4 gap-x-4">
 
     <div
-      class="bg-black rounded-2xl p-4 md:p-8 lg:p-8 lg:col-span-3 md:col-span-3 col-span-4 justify-self-stretch flex items-center min-h-[480px] lg:min-h-[700px] relative overflow-hidden max-h-screen">
+      class="bg-black dark:bg-zinc-900  rounded-2xl p-4 md:p-8 lg:p-8 lg:col-span-3 md:col-span-3 col-span-4 justify-self-stretch flex items-center min-h-[480px] lg:min-h-[700px] relative overflow-hidden max-h-screen">
 
       <!-- Check if the media should use a background style -->
       
@@ -301,7 +310,7 @@
     <!-- Media caption -->
     
     <div class="col-span-4 lg:col-span-1 md:col-span-1 pt-2">
-      <div class="text-sm text-zinc-500 max-w-[72ch]">
+      <div class="text-sm text-zinc-500 dark:text-zinc-300 max-w-[72ch]">
         <p>We designed the composer to be highly modular, allowing customization of sections according to the product type (e.g., Physical or Digital). This modularity not only facilitates easy adaptation across different devices but also personalizes the tool to the user's specific needs, streamlining the product creation experience.</p>
       </div>
     </div>
@@ -319,7 +328,7 @@
   <div class="grid grid-cols-4 gap-x-4">
 
     <div
-      class="bg-black rounded-2xl p-4 md:p-8 lg:p-8 lg:col-span-3 md:col-span-3 col-span-4 justify-self-stretch flex items-center min-h-[480px] lg:min-h-[700px] relative overflow-hidden max-h-screen">
+      class="bg-black dark:bg-zinc-900  rounded-2xl p-4 md:p-8 lg:p-8 lg:col-span-3 md:col-span-3 col-span-4 justify-self-stretch flex items-center min-h-[480px] lg:min-h-[700px] relative overflow-hidden max-h-screen">
 
       <!-- Check if the media should use a background style -->
       
@@ -350,7 +359,7 @@
   <div class="grid grid-cols-4 gap-x-4">
 
     <div
-      class="bg-black rounded-2xl p-4 md:p-8 lg:p-8 lg:col-span-3 md:col-span-3 col-span-4 justify-self-stretch flex items-center min-h-[480px] lg:min-h-[700px] relative overflow-hidden max-h-screen">
+      class="bg-black dark:bg-zinc-900  rounded-2xl p-4 md:p-8 lg:p-8 lg:col-span-3 md:col-span-3 col-span-4 justify-self-stretch flex items-center min-h-[480px] lg:min-h-[700px] relative overflow-hidden max-h-screen">
 
       <!-- Check if the media should use a background style -->
       
@@ -379,7 +388,7 @@
   <div class="grid grid-cols-4 gap-x-4">
 
     <div
-      class="bg-black rounded-2xl p-4 md:p-8 lg:p-8 lg:col-span-3 md:col-span-3 col-span-4 justify-self-stretch flex items-center min-h-[480px] lg:min-h-[700px] relative overflow-hidden max-h-screen">
+      class="bg-black dark:bg-zinc-900  rounded-2xl p-4 md:p-8 lg:p-8 lg:col-span-3 md:col-span-3 col-span-4 justify-self-stretch flex items-center min-h-[480px] lg:min-h-[700px] relative overflow-hidden max-h-screen">
 
       <!-- Check if the media should use a background style -->
       
@@ -396,7 +405,7 @@
     <!-- Media caption -->
     
     <div class="col-span-4 lg:col-span-1 md:col-span-1 pt-2">
-      <div class="text-sm text-zinc-500 max-w-[72ch]">
+      <div class="text-sm text-zinc-500 dark:text-zinc-300 max-w-[72ch]">
         <p>The second milestone was porting over the designs to mobile. First, we integrated the new composer into the Commerce iOS app. Next, we added support for mobile web. </p>
       </div>
     </div>
@@ -414,7 +423,7 @@
   <div class="grid grid-cols-4 gap-x-4">
 
     <div
-      class="bg-black rounded-2xl p-4 md:p-8 lg:p-8 lg:col-span-3 md:col-span-3 col-span-4 justify-self-stretch flex items-center min-h-[480px] lg:min-h-[700px] relative overflow-hidden max-h-screen">
+      class="bg-black dark:bg-zinc-900  rounded-2xl p-4 md:p-8 lg:p-8 lg:col-span-3 md:col-span-3 col-span-4 justify-self-stretch flex items-center min-h-[480px] lg:min-h-[700px] relative overflow-hidden max-h-screen">
 
       <!-- Check if the media should use a background style -->
       
@@ -431,7 +440,7 @@
     <!-- Media caption -->
     
     <div class="col-span-4 lg:col-span-1 md:col-span-1 pt-2">
-      <div class="text-sm text-zinc-500 max-w-[72ch]">
+      <div class="text-sm text-zinc-500 dark:text-zinc-300 max-w-[72ch]">
         <p>The product composer's type selector. </p>
       </div>
     </div>
@@ -449,7 +458,7 @@
   <div class="grid grid-cols-4 gap-x-4">
 
     <div
-      class="bg-black rounded-2xl p-4 md:p-8 lg:p-8 lg:col-span-3 md:col-span-3 col-span-4 justify-self-stretch flex items-center min-h-[480px] lg:min-h-[700px] relative overflow-hidden max-h-screen">
+      class="bg-black dark:bg-zinc-900  rounded-2xl p-4 md:p-8 lg:p-8 lg:col-span-3 md:col-span-3 col-span-4 justify-self-stretch flex items-center min-h-[480px] lg:min-h-[700px] relative overflow-hidden max-h-screen">
 
       <!-- Check if the media should use a background style -->
       
@@ -466,7 +475,7 @@
     <!-- Media caption -->
     
     <div class="col-span-4 lg:col-span-1 md:col-span-1 pt-2">
-      <div class="text-sm text-zinc-500 max-w-[72ch]">
+      <div class="text-sm text-zinc-500 dark:text-zinc-300 max-w-[72ch]">
         <p></p>
       </div>
     </div>
@@ -521,7 +530,7 @@
       <div class="flex flex-col w-full">
         <!-- Project Thumbnail -->
         <a href="/projects/sell-it.html"
-          class="w-full rounded-2xl p-6 h-full flex items-center justify-center grow relative overflow-hidden min-h-[380px] aspect-[3/2]  bg-black ">
+          class="w-full rounded-2xl p-6 h-full flex items-center justify-center grow relative overflow-hidden min-h-[380px] aspect-[3/2]  bg-black dark:bg-zinc-900  ">
 
           
           <img class="w-full h-full object-contain" src="/assets/images/sellit-01.png" />
@@ -533,7 +542,7 @@
       <div class="flex flex-col  w-full">
         <!-- Project Thumbnail -->
         <a href="/projects/introducing-denim.html"
-          class=" w-full rounded-2xl p-6 h-full flex items-center justify-center grow relative overflow-hidden min-h-[380px] aspect-[3/2]  bg-black ">
+          class=" w-full rounded-2xl p-6 h-full flex items-center justify-center grow relative overflow-hidden min-h-[380px] aspect-[3/2]  bg-black dark:bg-zinc-900  ">
 
           
           <img class="w-full h-full object-contain" src="/assets/images/launch_desktop.jpg" />
@@ -548,7 +557,7 @@
 
 
 
- <footer class="py-4 px-3 md:px-4 lg:px-6 flex items-start flex-col min-h-[30vh]  border-t border-neutral-900">
+ <footer class="py-4 px-3 md:px-4 lg:px-6 flex items-start flex-col min-h-[30vh]  border-t border-neutral-900 dark:border-neutral-400">
     <!-- <p class="lg:text-4xl text-3xl max-w-prose py-4">    
         ✍ Say hello — <br>
         <a class="underline" href="mailto:wmaxand@gmail.com">wmaxand@gmail.com</a>

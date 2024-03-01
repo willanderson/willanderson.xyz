@@ -26,14 +26,23 @@
 </head>
 
 
-<body>
-  <nav class="flex justify-between items-center px-3 md:px-4 lg:px-6 w-full sticky top-0 bg-white z-50">
+<body class="bg-white dark:bg-black text-black dark:text-white ">
+  <nav class="flex justify-between items-center px-3 md:px-4 lg:px-6 w-full sticky top-0 bg-white bg-inherit z-50">
     <a href="/">
         <div class="flex flex-row items-center">
             <div class="mr-2">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <circle cx="12" cy="12" r="12" fill="#FFCD29" />
-                </svg>
+                <div class="block dark:hidden">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="12" cy="12" r="12" fill="#FFCD29" />
+                    </svg>
+                </div>
+                <div class="hidden dark:block">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="12" cy="12" r="12" fill="#F09135" />
+                    </svg>
+                </div>
+  
+               
             </div>
             <div id="first" class="overflow-hidden h-14 flex items-center relative">
                 <div class="text-lg overflow-hidden">
@@ -71,7 +80,7 @@
   <p><strong>Page not found :(</strong></p>
   <p>The requested page could not be found.</p>
 </div>
- <footer class="py-4 px-3 md:px-4 lg:px-6 flex items-start flex-col min-h-[30vh]  border-t border-neutral-900">
+ <footer class="py-4 px-3 md:px-4 lg:px-6 flex items-start flex-col min-h-[30vh]  border-t border-neutral-900 dark:border-neutral-400">
     <!-- <p class="lg:text-4xl text-3xl max-w-prose py-4">    
         ✍ Say hello — <br>
         <a class="underline" href="mailto:wmaxand@gmail.com">wmaxand@gmail.com</a>

@@ -26,14 +26,23 @@
 </head>
 
 
-<body>
-  <nav class="flex justify-between items-center px-3 md:px-4 lg:px-6 w-full sticky top-0 bg-white z-50">
+<body class="bg-white dark:bg-black text-black dark:text-white ">
+  <nav class="flex justify-between items-center px-3 md:px-4 lg:px-6 w-full sticky top-0 bg-white bg-inherit z-50">
     <a href="/">
         <div class="flex flex-row items-center">
             <div class="mr-2">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <circle cx="12" cy="12" r="12" fill="#FFCD29" />
-                </svg>
+                <div class="block dark:hidden">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="12" cy="12" r="12" fill="#FFCD29" />
+                    </svg>
+                </div>
+                <div class="hidden dark:block">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="12" cy="12" r="12" fill="#F09135" />
+                    </svg>
+                </div>
+  
+               
             </div>
             <div id="first" class="overflow-hidden h-14 flex items-center relative">
                 <div class="text-lg overflow-hidden">
@@ -59,7 +68,7 @@
     </span>
 
     <span class="whitespace-nowrap">
-      <span class="artsy lg:w-12 lg:h-12  w-8 h-8 bg-no-repeat bg-left-center inline-block mr-1 bg-cover bg-[center_top_0.25rem]"></span>Artsy,
+      <span class="artsy dark:artsy-dark lg:w-12 lg:h-12  w-8 h-8 bg-no-repeat bg-left-center inline-block mr-1 bg-cover bg-[center_top_0.25rem]"></span>Artsy,
     </span>
 
     <span class="whitespace-nowrap">
@@ -91,7 +100,7 @@
         <div class="flex flex-col w-full">
     <!-- Project Thumbnail -->
     <a href="/projects/introducing-denim.html"
-        class="w-full rounded-2xl p-6 h-full flex items-center justify-center grow relative overflow-hidden min-h-[380px] aspect-[3/2]  bg-black ">
+        class="w-full rounded-2xl p-6 h-full flex items-center justify-center grow relative overflow-hidden min-h-[380px] aspect-[3/2]  bg-black dark:bg-zinc-900 ">
 
         
         <img class="w-full h-full object-contain" src="/assets/images/launch_desktop.jpg" />
@@ -104,11 +113,6 @@
 
 
 
-          <!-- <a href="/projects/introducing-denim.html">
-            <div class="bg-black rounded-2xl lg:p-14 md:p-14 p-6 h-full flex items-center justify-center">
-              <img class="object-contain aspect-[4/3]" src="/assets/images/launch_desktop.jpg" />
-            </div>
-          </a> -->
            
           
     
@@ -130,11 +134,6 @@
 
 
 
-          <!-- <a href="/projects/purchase-inbox.html">
-            <div class="bg-black rounded-2xl lg:p-14 md:p-14 p-6 h-full flex items-center justify-center">
-              <img class="object-contain aspect-[4/3]" src="/assets/images/texts.png" />
-            </div>
-          </a> -->
            
           
     
@@ -143,7 +142,7 @@
   </div>
 </section>
 
- <footer class="py-4 px-3 md:px-4 lg:px-6 flex items-start flex-col min-h-[30vh]  border-t border-neutral-900">
+ <footer class="py-4 px-3 md:px-4 lg:px-6 flex items-start flex-col min-h-[30vh]  border-t border-neutral-900 dark:border-neutral-400">
     <!-- <p class="lg:text-4xl text-3xl max-w-prose py-4">    
         ✍ Say hello — <br>
         <a class="underline" href="mailto:wmaxand@gmail.com">wmaxand@gmail.com</a>

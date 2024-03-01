@@ -26,14 +26,23 @@
 </head>
 
 
-<body>
-  <nav class="flex justify-between items-center px-3 md:px-4 lg:px-6 w-full sticky top-0 bg-white z-50">
+<body class="bg-white dark:bg-black text-black dark:text-white ">
+  <nav class="flex justify-between items-center px-3 md:px-4 lg:px-6 w-full sticky top-0 bg-white bg-inherit z-50">
     <a href="/">
         <div class="flex flex-row items-center">
             <div class="mr-2">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <circle cx="12" cy="12" r="12" fill="#FFCD29" />
-                </svg>
+                <div class="block dark:hidden">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="12" cy="12" r="12" fill="#FFCD29" />
+                    </svg>
+                </div>
+                <div class="hidden dark:block">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="12" cy="12" r="12" fill="#F09135" />
+                    </svg>
+                </div>
+  
+               
             </div>
             <div id="first" class="overflow-hidden h-14 flex items-center relative">
                 <div class="text-lg overflow-hidden">
@@ -72,7 +81,7 @@
   <div class="flex w-full">
     <div class="flex flex-col max-w-2xl lg:px-2">
       <div class="w-full">
-        <h2 class="text-xl text-zinc-500">Coinbase</h2>
+        <h2 class="text-xl text-zinc-500 dark:text-zinc-400">Coinbase</h2>
       </div>
       <div class="w-full">
         <h1 class="text-4xl">ENS Claim Flow</h1>
@@ -105,7 +114,7 @@
   <div class="grid grid-cols-4 gap-x-4">
 
     <div
-      class="bg-black rounded-2xl p-4 md:p-8 lg:p-8 lg:col-span-3 md:col-span-3 col-span-4 justify-self-stretch flex items-center min-h-[480px] lg:min-h-[700px] relative overflow-hidden max-h-screen">
+      class="bg-black dark:bg-zinc-900  rounded-2xl p-4 md:p-8 lg:p-8 lg:col-span-3 md:col-span-3 col-span-4 justify-self-stretch flex items-center min-h-[480px] lg:min-h-[700px] relative overflow-hidden max-h-screen">
 
       <!-- Check if the media should use a background style -->
       
@@ -122,7 +131,7 @@
     <!-- Media caption -->
     
     <div class="col-span-4 lg:col-span-1 md:col-span-1 pt-2">
-      <div class="text-sm text-zinc-500 max-w-[72ch]">
+      <div class="text-sm text-zinc-500 dark:text-zinc-300 max-w-[72ch]">
         <p>Introducing users to the ENS claim flow, we focus on simplifying the concept and highlighting its benefits, paving the way for a more personalized wallet experience with an informative walkthrough.</p>
       </div>
     </div>
@@ -140,7 +149,7 @@
   <div class="grid grid-cols-4 gap-x-4">
 
     <div
-      class="bg-black rounded-2xl p-4 md:p-8 lg:p-8 lg:col-span-3 md:col-span-3 col-span-4 justify-self-stretch flex items-center min-h-[480px] lg:min-h-[700px] relative overflow-hidden max-h-screen">
+      class="bg-black dark:bg-zinc-900  rounded-2xl p-4 md:p-8 lg:p-8 lg:col-span-3 md:col-span-3 col-span-4 justify-self-stretch flex items-center min-h-[480px] lg:min-h-[700px] relative overflow-hidden max-h-screen">
 
       <!-- Check if the media should use a background style -->
       
@@ -157,7 +166,7 @@
     <!-- Media caption -->
     
     <div class="col-span-4 lg:col-span-1 md:col-span-1 pt-2">
-      <div class="text-sm text-zinc-500 max-w-[72ch]">
+      <div class="text-sm text-zinc-500 dark:text-zinc-300 max-w-[72ch]">
         <p>The flow for choosing and securing an ENS name within Coinbase's iOS app.</p>
       </div>
     </div>
@@ -175,7 +184,7 @@
   <div class="grid grid-cols-4 gap-x-4">
 
     <div
-      class="bg-black rounded-2xl p-4 md:p-8 lg:p-8 lg:col-span-3 md:col-span-3 col-span-4 justify-self-stretch flex items-center min-h-[480px] lg:min-h-[700px] relative overflow-hidden max-h-screen">
+      class="bg-black dark:bg-zinc-900  rounded-2xl p-4 md:p-8 lg:p-8 lg:col-span-3 md:col-span-3 col-span-4 justify-self-stretch flex items-center min-h-[480px] lg:min-h-[700px] relative overflow-hidden max-h-screen">
 
       <!-- Check if the media should use a background style -->
       
@@ -194,7 +203,7 @@
     <!-- Media caption -->
     
     <div class="col-span-4 lg:col-span-1 md:col-span-1 pt-2">
-      <div class="text-sm text-zinc-500 max-w-[72ch]">
+      <div class="text-sm text-zinc-500 dark:text-zinc-300 max-w-[72ch]">
         <p>An animation displayed during the onboarding flow. My goal was to highlight practical uses of an ENS domain, making it easier for users to see the direct benefits and applications in their digital lives.</p>
       </div>
     </div>
@@ -212,7 +221,7 @@
   <div class="grid grid-cols-4 gap-x-4">
 
     <div
-      class="bg-black rounded-2xl p-4 md:p-8 lg:p-8 lg:col-span-3 md:col-span-3 col-span-4 justify-self-stretch flex items-center min-h-[480px] lg:min-h-[700px] relative overflow-hidden max-h-screen">
+      class="bg-black dark:bg-zinc-900  rounded-2xl p-4 md:p-8 lg:p-8 lg:col-span-3 md:col-span-3 col-span-4 justify-self-stretch flex items-center min-h-[480px] lg:min-h-[700px] relative overflow-hidden max-h-screen">
 
       <!-- Check if the media should use a background style -->
       
@@ -229,7 +238,7 @@
     <!-- Media caption -->
     
     <div class="col-span-4 lg:col-span-1 md:col-span-1 pt-2">
-      <div class="text-sm text-zinc-500 max-w-[72ch]">
+      <div class="text-sm text-zinc-500 dark:text-zinc-300 max-w-[72ch]">
         <p></p>
       </div>
     </div>
@@ -247,7 +256,7 @@
   <div class="grid grid-cols-4 gap-x-4">
 
     <div
-      class="bg-black rounded-2xl p-4 md:p-8 lg:p-8 lg:col-span-3 md:col-span-3 col-span-4 justify-self-stretch flex items-center min-h-[480px] lg:min-h-[700px] relative overflow-hidden max-h-screen">
+      class="bg-black dark:bg-zinc-900  rounded-2xl p-4 md:p-8 lg:p-8 lg:col-span-3 md:col-span-3 col-span-4 justify-self-stretch flex items-center min-h-[480px] lg:min-h-[700px] relative overflow-hidden max-h-screen">
 
       <!-- Check if the media should use a background style -->
       
@@ -264,7 +273,7 @@
     <!-- Media caption -->
     
     <div class="col-span-4 lg:col-span-1 md:col-span-1 pt-2">
-      <div class="text-sm text-zinc-500 max-w-[72ch]">
+      <div class="text-sm text-zinc-500 dark:text-zinc-300 max-w-[72ch]">
         <p></p>
       </div>
     </div>
@@ -282,7 +291,7 @@
   <div class="grid grid-cols-4 gap-x-4">
 
     <div
-      class="bg-black rounded-2xl p-4 md:p-8 lg:p-8 lg:col-span-3 md:col-span-3 col-span-4 justify-self-stretch flex items-center min-h-[480px] lg:min-h-[700px] relative overflow-hidden max-h-screen">
+      class="bg-black dark:bg-zinc-900  rounded-2xl p-4 md:p-8 lg:p-8 lg:col-span-3 md:col-span-3 col-span-4 justify-self-stretch flex items-center min-h-[480px] lg:min-h-[700px] relative overflow-hidden max-h-screen">
 
       <!-- Check if the media should use a background style -->
       
@@ -299,7 +308,7 @@
     <!-- Media caption -->
     
     <div class="col-span-4 lg:col-span-1 md:col-span-1 pt-2">
-      <div class="text-sm text-zinc-500 max-w-[72ch]">
+      <div class="text-sm text-zinc-500 dark:text-zinc-300 max-w-[72ch]">
         <p>After securing an ENS name, the next step we guide users through is setting up their profile, enhancing their wallet with a layer of personal identity that enriches peer-to-peer interactions.</p>
       </div>
     </div>
@@ -317,7 +326,7 @@
   <div class="grid grid-cols-4 gap-x-4">
 
     <div
-      class="bg-black rounded-2xl p-4 md:p-8 lg:p-8 lg:col-span-3 md:col-span-3 col-span-4 justify-self-stretch flex items-center min-h-[480px] lg:min-h-[700px] relative overflow-hidden max-h-screen">
+      class="bg-black dark:bg-zinc-900  rounded-2xl p-4 md:p-8 lg:p-8 lg:col-span-3 md:col-span-3 col-span-4 justify-self-stretch flex items-center min-h-[480px] lg:min-h-[700px] relative overflow-hidden max-h-screen">
 
       <!-- Check if the media should use a background style -->
       
@@ -382,7 +391,7 @@
       <div class="flex flex-col w-full">
         <!-- Project Thumbnail -->
         <a href="/projects/pdp-engine.html"
-          class="w-full rounded-2xl p-6 h-full flex items-center justify-center grow relative overflow-hidden min-h-[380px] aspect-[3/2]  bg-black ">
+          class="w-full rounded-2xl p-6 h-full flex items-center justify-center grow relative overflow-hidden min-h-[380px] aspect-[3/2]  bg-black dark:bg-zinc-900  ">
 
           
           <img class="w-full h-full object-contain" src="/assets/images/pdp-01.png" />
@@ -394,7 +403,7 @@
       <div class="flex flex-col  w-full">
         <!-- Project Thumbnail -->
         <a href="/projects/sell-it.html"
-          class=" w-full rounded-2xl p-6 h-full flex items-center justify-center grow relative overflow-hidden min-h-[380px] aspect-[3/2]  bg-black ">
+          class=" w-full rounded-2xl p-6 h-full flex items-center justify-center grow relative overflow-hidden min-h-[380px] aspect-[3/2]  bg-black dark:bg-zinc-900  ">
 
           
           <img class="w-full h-full object-contain" src="/assets/images/sellit-01.png" />
@@ -409,7 +418,7 @@
 
 
 
- <footer class="py-4 px-3 md:px-4 lg:px-6 flex items-start flex-col min-h-[30vh]  border-t border-neutral-900">
+ <footer class="py-4 px-3 md:px-4 lg:px-6 flex items-start flex-col min-h-[30vh]  border-t border-neutral-900 dark:border-neutral-400">
     <!-- <p class="lg:text-4xl text-3xl max-w-prose py-4">    
         ✍ Say hello — <br>
         <a class="underline" href="mailto:wmaxand@gmail.com">wmaxand@gmail.com</a>
