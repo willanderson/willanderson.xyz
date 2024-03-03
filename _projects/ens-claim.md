@@ -2,7 +2,7 @@
 status: Published
 title: ENS Claim Flow
 company: Coinbase
-date: 2023-09-04T16:13:35.669Z
+date: 2021-09-04T16:13:35.669Z
 hero: /assets/images/ens-hero.png
 hero_style: centered
 preview: Identity and the blockchain

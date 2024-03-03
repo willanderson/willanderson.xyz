@@ -2,7 +2,7 @@
 status: Published
 title: Sell It
 company: Squarespace
-date: 2023-09-04T16:16:10.689Z
+date: 2019-09-04T16:16:10.689Z
 hero: /assets/images/sellit-01.png
 hero_style: centered
 preview: eCommerce without a website

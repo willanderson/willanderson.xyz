@@ -2,7 +2,7 @@
 status: Published
 title: Product Composer
 company: Squarespace
-date: 2023-09-04T16:19:21.412Z
+date: 2019-09-04T16:19:21.412Z
 hero: /assets/images/03.png
 hero_style: centered
 preview: An easier way to create and manage your products

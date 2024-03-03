@@ -2,7 +2,7 @@
 status: Published
 title: Layout Engine
 company: Squarespace
-date: 2023-09-04T16:12:54.167Z
+date: 2019-09-04T16:12:54.167Z
 hero: /assets/images/pdp-01.png
 hero_style: centered
 preview: First-class design templates for Squarespace Commerce

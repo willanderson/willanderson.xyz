@@ -2,7 +2,7 @@
 status: Published
 title: Unified Onboarding
 company: Coinbase
-date: 2023-09-04T16:10:44.974Z
+date: 2021-09-04T16:10:44.974Z
 hero: /assets/images/05.png
 hero_style: centered
 preview: A unified onboarding framework
