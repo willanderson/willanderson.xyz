@@ -21,7 +21,7 @@ items:
   - asset: /assets/images/denim01.png
     media_style: centered
   - media_style: background
-    asset: /assets/images/denim02.png
+    asset: /assets/images/denim-projects.png
   - asset: https://willanderson-xyz-video.s3.amazonaws.com/teaser-hero.mov
     text: The denim's teaser site featured a countdown over the 2-week drip campaign.
     media_style: centered
