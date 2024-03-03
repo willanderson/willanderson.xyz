@@ -1,22 +1,19 @@
 ---
 status: Published
-title: Denim Launch
+title: Denim launch
 company: Everlane
 date: 2016-11-11T18:43:18.089Z
 hero: /assets/images/launch_desktop.jpg
 hero_style: centered
-preview: "The most ambitious launch in Everlane's history. "
+preview: Launching denim.
 intro: >-
   Denim was an entirely new category for Everlane, and one of the most ambitious
-  campaigns I was involved in. The product took more than 2 years to develop,
-  and the launch involved 4-months of prep, planning, and production to
+  product launches I was involved in. The product took more than 2 years to
+  develop, and tis release involved 4-months of planning and production to
   execute. 
 
 
-  The campaign centered around one message: Denim You Can Get Behind. The company sourced high-quality Japanese denim that typically retails for double the price. We manufactured it at a cutting-edge factory in Vietnam that used substantially less waste than the industry average. And the styles felt both timeliness and relevant, with cuts that were flattering across a diverse range of body types. 
-
-
-  To support the launch, I designed a multi-week, interactive portal that hyped the product and educated our customer's about the denim industry.  Along with housing 2 teaser commercials, the site evolved week-to-week, zooming out to reveal more details and story as the launch grew closer. In addition, my team shipped  an entirely new shopping experience for the e-commerce site (we called it Denim Shop). These updates made it easier for customers to explore our fits and preview them across different body types.
+  For the campaign, I designed a multi-week, interactive portal that hyped the product and educated  customer's about the  industry. The site evolved week-to-week, revealing new creative and stories as the launch date grew closer. In addition, my team shipped an entirely new shopping experience for the site that made it easier for customers to explore each fit and preview them across different body types.
 items:
   - asset: /assets/images/denim01.png
     media_style: centered
