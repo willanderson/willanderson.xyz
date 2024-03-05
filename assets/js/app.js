@@ -26,3 +26,22 @@ document.addEventListener('DOMContentLoaded', (event) => {
     observer.observe(video);
   });
 });
+
+$('#copy-link').on('click', function(event) {
+  // Prevent the default action of the link
+  event.preventDefault();
+  // Get the email address from the link's text
+  var email = $('#email').text();
+  // Copy the email address to the clipboard
+  navigator.clipboard.writeText(email).then(function() {
+      // If the copy was successful, update the link text to "copied"
+      $('#copy-link').text('(Copied!)');
+      // Optionally, reset the link text back to original after 2 seconds
+      setTimeout(function() {
+          $('#copy-link').text('(⌘C)');
+      }, 2000);
+  }, function(err) {
+      // If there was an error copying, you can handle it here
+      console.error('Async: Could not copy text: ', err);
+  });
+});

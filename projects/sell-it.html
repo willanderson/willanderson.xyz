@@ -55,8 +55,8 @@
     </a>
 
     <div class="text-lg">
-        <a href="/projects/" class="mr-4 ">Projects</a>
-        <a href="/about/" class="mr-4 ">About</a>
+        <a href="/projects/" class="mr-3 ">Projects</a>
+        <a href="/about/" class=" ">About</a>
     </div>
 </nav>
 
@@ -317,20 +317,21 @@
 
 
  <footer class="py-4 px-3 md:px-4 lg:px-6 flex items-start flex-col min-h-[30vh]  border-t border-neutral-900 dark:border-neutral-400">
-    <!-- <p class="lg:text-4xl text-3xl max-w-prose py-4">    
-        ✍ Say hello — <br>
-        <a class="underline" href="mailto:wmaxand@gmail.com">wmaxand@gmail.com</a>
-    </p> -->
-    <div class="flex flex-row grow items-end justify-end text-lg">
 
-        <div class="mr-4 text-lg">
-            <a class="underline mr-4" href="https://instagram.com/willanderson">Ig</a>
-            <a class="underline mr-4" href="https://www.linkedin.com/in/wmaxand/">Li</a>
-            <a class="underline mr-4" href="mailto:wmaxand@gmail.com">wmaxand@gmail.com</a>
+    <div class="flex flex-row grow items-end justify-end text-lg w-full">
+
+        <div class="mr-4 text-lg flex w-full">
+            <div id="email-container" class="grow">
+                <a id="email" class="underline" href="mailto:wmaxand@gmail.com">wmaxand@gmail.com</a>
+                <a class="text-zinc-500 dark:text-zinc-400" href="#" id="copy-link" onclick="copyEmail()">(⌘C)</a>
+            </div>
+            <div class="flex-none">
+                <a class="underline mr-3 uppercase" href="https://instagram.com/willanderson">Ig</a>
+                <a class="underline uppercase" href="https://www.linkedin.com/in/wmaxand/">Li</a>
+            </div>
+
+            
         </div>
-        <!-- <div class="mr-4">
-            <p  class="text-stone-400">Thanks for visiting!</p>
-        </div> -->
     </div>
 
 </footer>
