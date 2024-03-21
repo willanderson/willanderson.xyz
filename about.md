@@ -60,7 +60,7 @@ sections:
       CMS](https://decapcms.org/docs/intro/) to manage its contents.
 
 
-      There's very little custom CSS. For the most part, I rely on [Tailwinds](https://tailwindcss.com/) for styling and responsive layouts. There’s a tiny bit of JavaScript that [ChatGBT](https://openai.com/blog/chatgpt) helped me with (Thanks babe 😘). 
+      There's very little custom CSS. For the most part, I rely on [Tailwinds](https://tailwindcss.com/) for styling and responsive layouts. There’s a tiny bit of JavaScript that [](https://openai.com/blog/chatgpt)ChatGPT helped me with (Thanks babe 😘). 
 
 
       The site is basically free to run, and pretty easy to update and maintain. For anyone looking to follow a similar approach, here are two guides that proved very helpful: 
