@@ -7,16 +7,14 @@ intro: >-
   and technology companies. 
 
 
-  I've been at Meta since 2022, where I work on our monetization tools for professionals across Facebook, Instagram and WhatsApp. Before that, I held a Design Lead position at Free Association, a Brooklyn-based design firm specializing in digital products and brand systems.
+  I've been at Instagram since 2022. I work on the Reels$ team. Previously, I held a Design Lead position at Free Association, a Brooklyn-based design firm specializing in digital products and brand systems.
 cv:
   - year: 2022-Present
     title: Product Designer
-    company: Meta
+    company: Instagram
     location: New York, NY
-    description: Driving growth and new product experiences for Meta Business Suite,
-      a unified platform of professional and creator tools across Meta's Family
-      of Apps.
-    url: https://www.meta.com/
+    description: Reels$
+    url: https://www.instagram.com/
   - company: Free Association
     title: " Design Lead"
     location: Brooklyn, NY / Remote
