@@ -1,13 +1,10 @@
 ---
 layout: about
 title: About
-intro: >-
-  Hi, I'm Will—a Product Designer based in New York. For the past decade, I've
-  created apps, digital products, and websites for a range of startups, brands,
-  and technology companies. 
-
-
-  I've been at Instagram since 2022. I work on the Reels$ team. Previously, I held a Design Lead position at Free Association, a Brooklyn-based design firm specializing in digital products and brand systems.
+intro: Hi, I'm Will—a Product Designer based in New York. I'm currently at
+  Instagram working on Reels. Over the years, I've built apps and websites for a
+  range of startups, technology companies and small businesses. You can find
+  some of my IC work [here](/projects).
 cv:
   - year: 2022-Present
     title: Product Designer
