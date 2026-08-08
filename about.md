@@ -1,40 +1,36 @@
 ---
 layout: about
 title: About
+seo_title: Will Anderson — Product Designer
+seo_description: Will Anderson is a product designer in Brooklyn, New York,
+  shaping video experiences at Instagram.
 permalink: /
-intro: Hi, I'm Will—a Product Designer based in New York. I'm currently at
-  Instagram working on Reels. Over the years, I've built apps and websites for a
-  range of startups, technology companies and small businesses. You can find
-  some of my IC work [here](/projects).
 cv:
   - year: 2022-Present
     title: Product Designer
     company: Instagram
     location: New York, NY
-    description: Reels$
+    description: Shaping how video works on Instagram, from core Reels interactions
+      to emerging content formats, as well as the monetization experiences around them.
     url: https://www.instagram.com/
   - company: Free Association
-    title: " Design Lead"
+    title: Design Lead
     location: Brooklyn, NY / Remote
     year: 2020-2022
-    description: "Embedded on Coinbase's Identity team. Collaborated with design
-      leads on product vision, new feature development, and onboarding
-      unification. "
+    description: Partnered with Coinbase's Identity team on product vision, new
+      features, and a more unified onboarding experience.
     url: https://www.freeassociation.com/
   - company: Artsy
     title: Senior Product Designer
-    description: Designing new experiences for the Artsy eCommerce and Marketplace
-      platform. Owned core surfaces and end-to-end checkout flows for the
-      Purchase & Actions team .
+    description: Created new shopping experiences across Artsy's marketplace,
+      including core surfaces and end-to-end checkout flows.
     year: "2020"
     location: New York, NY
     url: https://www.artsy.net/
   - company: Squarespace
     title: Product Designer
-    description: "Designer on Commerce, Squarespace's all-in-one platform for
-      selling goods, services, and subscriptions online. Owned and launched core
-      features such as inventory management, store settings, and commerce
-      onboarding. "
+    description: Led design for key parts of Squarespace Commerce, including
+      inventory management, store settings, and onboarding.
     year: 2018-2020
     location: New York, NY
     url: https://www.squarespace.com/
@@ -42,8 +38,8 @@ cv:
     title: Designer – Product & Brand
     year: 2015-2018
     location: San Francisco, CA
-    description: "Working across creative and product to shape Everlane's online and
-      retail presence. "
+    description: Worked across brand and product to define Everlane's online and
+      retail experiences.
     url: https://www.everlane.com/
 sections:
   - title: About this site
@@ -54,9 +50,6 @@ sections:
       (though I am also using AWS to host some of the larger assets). I use
       [Netlify](https://www.netlify.com/) to deploy the site, and [Decap
       CMS](https://decapcms.org/docs/intro/) to manage its contents.
-
-
-      There's very little custom CSS. For the most part, I rely on [Tailwinds](https://tailwindcss.com/) for styling and responsive layouts. There’s a tiny bit of JavaScript that [](https://openai.com/blog/chatgpt)ChatGPT helped me with (Thanks babe 😘). 
 
 
       The site is basically free to run, and pretty easy to update and maintain. For anyone looking to follow a similar approach, here are two guides that proved very helpful: 

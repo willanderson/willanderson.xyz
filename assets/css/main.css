@@ -103,10 +103,14 @@ background-image: url('data:image/svg+xml,<svg width="32" height="32" viewBox="0
 }
 
 #lastName {
-    position: relative;
-    left: 0px;
-    top: 22px; 
-    transition: top 0.2s ease-out;
+    display: inline-block;
+    transform: translateY(22px);
+    transition: transform 0.45s cubic-bezier(0.22, 1, 0.36, 1);
+    will-change: transform;
+}
+
+#lastName.is-visible {
+    transform: translateY(0);
 }
 
 .intro h2:not(:first-of-type) {
@@ -131,4 +135,21 @@ background-image: url('data:image/svg+xml,<svg width="32" height="32" viewBox="0
 
 .wyswg a {
     text-decoration: underline;
+}
+
+/* Selected work carousel */
+
+.selected-work-carousel {
+    cursor: grab;
+    overscroll-behavior-inline: contain;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.selected-work-carousel:active {
+    cursor: grabbing;
+}
+
+.selected-work-carousel::-webkit-scrollbar {
+    display: none;
 }

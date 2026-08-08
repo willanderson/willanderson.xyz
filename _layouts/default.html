@@ -2,36 +2,42 @@
 <html lang="en">
 
 <head>
+  {% assign meta_title = page.seo_title | default: page.title | default: site.title %}
+  {% assign meta_description = page.seo_description | default: page.intro | default: site.description | strip_html | strip_newlines %}
+  {% assign meta_image = page.hero | default: '/assets/images/poster2.png' | absolute_url %}
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="{{ meta_description | escape }}" />
+  <link rel="canonical" href="{{ page.url | absolute_url }}" />
 
-  <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="{{ site.url }}{{ page.url }}" />
-  <meta property="og:title" content="{{ page.title | default: site.title }}" />
-  <meta property="og:image" content="/assets/images/poster2.png" />
+  <meta property="og:site_name" content="{{ site.title }}" />
+  <meta property="og:url" content="{{ page.url | absolute_url }}" />
+  <meta property="og:title" content="{{ meta_title | escape }}" />
+  <meta property="og:description" content="{{ meta_description | escape }}" />
+  <meta property="og:image" content="{{ meta_image }}" />
+  <meta property="og:image:alt" content="{{ meta_title | escape }}" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="{{ meta_title | escape }}" />
+  <meta name="twitter:description" content="{{ meta_description | escape }}" />
+  <meta name="twitter:image" content="{{ meta_image }}" />
 
+  {% if page.layout == 'project-detail' %}
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/5.3.4/photoswipe.min.css"
     integrity="sha512-TdCx5ObKpq3+lwUdiXFgFLhqwTB98YsdaQWSJrwkOz084qaeO86+NMYfU/pnpPo1pDVah0a7yvFmbcvI8ZiGAw=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
+  {% endif %}
   <link rel="stylesheet" type="text/css" href="{{ '/assets/css/main.css' | relative_url }}" />
+  <link rel="preconnect" href="https://rsms.me" />
   <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
-  <title>
-    {% if page.title %}
-      {{ page.title }} | {{ site.title }}
-    {% else %}
-      {{ site.title }}
-    {% endif %}
-  </title>
+  <title>{{ meta_title | escape }}{% unless meta_title == site.title or page.seo_title %} | {{ site.title }}{% endunless %}</title>
   <link rel="shortcut icon" type="image/png" href="{{ '/assets/images/fav.png' | relative_url }}" />
 </head>
 
 
 <body class="bg-white dark:bg-black text-black dark:text-white {{page.layout}} ">
   {% include nav.html %} {{ content }} {% include footer.html %}
-</body>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script type="module" src="{{ '/assets/js/app.js' | relative_url }}"></script>
 <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 <script>
@@ -54,4 +60,5 @@
 
   gtag('config', 'G-KTMHX5TQTR');
 </script>
+</body>
 </html>
