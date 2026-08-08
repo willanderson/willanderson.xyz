@@ -2,26 +2,32 @@
 <html lang="en">
 
 <head>
+  
+  
+  
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Will Anderson is a Product Designer that lives in Brooklyn, NY.  He works at Instagram. " />
+  <link rel="canonical" href="https://willanderson.xyz/home/" />
 
-  <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://willanderson.xyz//home/" />
+  <meta property="og:site_name" content="Will Anderson" />
+  <meta property="og:url" content="https://willanderson.xyz/home/" />
   <meta property="og:title" content="Will Anderson" />
-  <meta property="og:image" content="/assets/images/poster2.png" />
+  <meta property="og:description" content="Will Anderson is a Product Designer that lives in Brooklyn, NY.  He works at Instagram. " />
+  <meta property="og:image" content="https://willanderson.xyz/assets/images/poster2.png" />
+  <meta property="og:image:alt" content="Will Anderson" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Will Anderson" />
+  <meta name="twitter:description" content="Will Anderson is a Product Designer that lives in Brooklyn, NY.  He works at Instagram. " />
+  <meta name="twitter:image" content="https://willanderson.xyz/assets/images/poster2.png" />
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/5.3.4/photoswipe.min.css"
-    integrity="sha512-TdCx5ObKpq3+lwUdiXFgFLhqwTB98YsdaQWSJrwkOz084qaeO86+NMYfU/pnpPo1pDVah0a7yvFmbcvI8ZiGAw=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
   <link rel="stylesheet" type="text/css" href="/assets/css/main.css" />
+  <link rel="preconnect" href="https://rsms.me" />
   <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
-  <title>
-    
-      Will Anderson
-    
-  </title>
+  <title>Will Anderson</title>
   <link rel="shortcut icon" type="image/png" href="/assets/images/fav.png" />
 </head>
 
@@ -53,11 +59,6 @@
         </div>
 
     </a>
-
-    <div class="text-lg">
-        <a href="/projects/" class="mr-3 ">Projects</a>
-        <a href="/" class=" ">About</a>
-    </div>
 </nav>
  <section class="py-4 px-3 md:px-4 lg:px-6 grid grid-cols-4 gap-x-4 min-h-[50vh]">
   <h1 class="col-span-4 lg:text-5xl text-4xl max-w-prose">
@@ -98,19 +99,18 @@
         
         <div class="flex flex-col w-full">
     <!-- Project Thumbnail -->
-    <a href="/projects/introducing-denim.html"
-        class="w-full rounded-2xl p-8 h-full flex items-center justify-center grow relative overflow-hidden min-h-[380px] aspect-[3/2]  bg-black dark:bg-zinc-900 ">
+    <a href="/projects/introducing-denim.html" aria-label="View Denim launch"
+        class="w-full rounded-2xl p-8 flex items-center justify-center relative overflow-hidden aspect-[3/2] min-h-[380px]  bg-black dark:bg-zinc-900 ">
 
         
-        <img class="w-full h-full object-contain" src="/assets/images/launch_desktop.jpg" />
+        <img class="w-full h-full object-contain" src="/assets/images/launch_desktop.jpg"
+            alt="" loading="lazy" decoding="async" />
         
 
     </a>
     <!-- Project Details -->
     
 </div>
-
-
 
            
           
@@ -118,19 +118,18 @@
         
         <div class="flex flex-col w-full">
     <!-- Project Thumbnail -->
-    <a href="/projects/pdp-engine.html"
-        class="w-full rounded-2xl p-8 h-full flex items-center justify-center grow relative overflow-hidden min-h-[380px] aspect-[3/2]  bg-black dark:bg-zinc-900 ">
+    <a href="/projects/pdp-engine.html" aria-label="View Layout Engine"
+        class="w-full rounded-2xl p-8 flex items-center justify-center relative overflow-hidden aspect-[3/2] min-h-[380px]  bg-black dark:bg-zinc-900 ">
 
         
-        <img class="w-full h-full object-contain" src="/assets/images/pdp-01.png" />
+        <img class="w-full h-full object-contain" src="/assets/images/pdp-01.png"
+            alt="" loading="lazy" decoding="async" />
         
 
     </a>
     <!-- Project Details -->
     
 </div>
-
-
 
            
           
@@ -147,7 +146,7 @@
         <div class="mr-4 text-lg flex w-full">
             <div id="email-container" class="grow">
                 <a id="email" class="underline" href="mailto:wmaxand@gmail.com">wmaxand@gmail.com</a>
-                <a class="text-zinc-500 dark:text-zinc-400" href="#" id="copy-link" onclick="copyEmail()">(⌘C)</a>
+                <a class="text-zinc-500 dark:text-zinc-400" href="#" id="copy-link">(⌘C)</a>
             </div>
             <div class="flex-none">
                 <a class="underline mr-3 uppercase" href="https://instagram.com/willanderson">Ig</a>
@@ -159,8 +158,7 @@
     </div>
 
 </footer>
-</body>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
 <script type="module" src="/assets/js/app.js"></script>
 <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 <script>
@@ -183,4 +181,5 @@
 
   gtag('config', 'G-KTMHX5TQTR');
 </script>
+</body>
 </html>

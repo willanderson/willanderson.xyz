@@ -1,11 +1,11 @@
-$(window).scroll(function() {
-    var scrollVal = $(this).scrollTop();
-    if (scrollVal > 22) { /* Adjust as needed */
-      $("#lastName").css('top', '0px');
-    } else {
-      $("#lastName").css('top', '22px'); /* Return to original position */
-    }
-});
+const lastName = document.querySelector('#lastName');
+
+const updateHeaderName = () => {
+  lastName?.classList.toggle('is-visible', window.scrollY > 22);
+};
+
+window.addEventListener('scroll', updateHeaderName, { passive: true });
+updateHeaderName();
   
 document.addEventListener('DOMContentLoaded', (event) => {
   const videos = document.querySelectorAll('.lazy-video');
@@ -27,21 +27,102 @@ document.addEventListener('DOMContentLoaded', (event) => {
   });
 });
 
-$('#copy-link').on('click', function(event) {
-  // Prevent the default action of the link
+const copyLink = document.querySelector('#copy-link');
+const emailAddress = document.querySelector('#email');
+
+copyLink?.addEventListener('click', (event) => {
   event.preventDefault();
-  // Get the email address from the link's text
-  var email = $('#email').text();
-  // Copy the email address to the clipboard
-  navigator.clipboard.writeText(email).then(function() {
-      // If the copy was successful, update the link text to "copied"
-      $('#copy-link').text('(Copied!)');
-      // Optionally, reset the link text back to original after 2 seconds
-      setTimeout(function() {
-          $('#copy-link').text('(⌘C)');
+  const email = emailAddress?.textContent;
+
+  if (!email) return;
+
+  navigator.clipboard.writeText(email).then(() => {
+      copyLink.textContent = '(Copied!)';
+      setTimeout(() => {
+          copyLink.textContent = '(⌘C)';
       }, 2000);
-  }, function(err) {
-      // If there was an error copying, you can handle it here
-      console.error('Async: Could not copy text: ', err);
+  }).catch((error) => {
+      console.error('Could not copy email address: ', error);
   });
+});
+
+document.addEventListener('DOMContentLoaded', () => {
+  const carousel = document.querySelector('#selected-work-carousel');
+  const projectSets = [...(carousel?.querySelectorAll('.selected-work-set') || [])];
+  const projectSet = projectSets[0];
+
+  if (!carousel || !projectSet) return;
+
+  const shuffledProjectUrls = [...projectSet.children]
+    .map((card) => card.querySelector('a')?.getAttribute('href'))
+    .filter(Boolean);
+
+  for (let index = shuffledProjectUrls.length - 1; index > 0; index -= 1) {
+    const randomIndex = Math.floor(Math.random() * (index + 1));
+    [shuffledProjectUrls[index], shuffledProjectUrls[randomIndex]] =
+      [shuffledProjectUrls[randomIndex], shuffledProjectUrls[index]];
+  }
+
+  projectSets.forEach((set) => {
+    const cardsByUrl = new Map(
+      [...set.children].map((card) => [card.querySelector('a')?.getAttribute('href'), card])
+    );
+
+    shuffledProjectUrls.forEach((url) => set.append(cardsByUrl.get(url)));
+  });
+
+  const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const autoScrollSpeed = 14;
+  const resumeDelay = 2500;
+  let isAutoScrolling = !prefersReducedMotion;
+  let resumeTimer;
+  let previousFrameTime = performance.now();
+
+  const resetCarouselPosition = () => {
+    const setWidth = projectSet.offsetWidth;
+
+    if (carousel.scrollLeft >= setWidth) {
+      carousel.scrollLeft -= setWidth;
+    }
+  };
+
+  const pauseAutoScroll = () => {
+    isAutoScrolling = false;
+    window.clearTimeout(resumeTimer);
+  };
+
+  const resumeAutoScroll = () => {
+    if (prefersReducedMotion) return;
+
+    window.clearTimeout(resumeTimer);
+    resumeTimer = window.setTimeout(() => {
+      previousFrameTime = performance.now();
+      isAutoScrolling = true;
+    }, resumeDelay);
+  };
+
+  const autoScroll = (currentFrameTime) => {
+    const elapsedSeconds = Math.min(currentFrameTime - previousFrameTime, 50) / 1000;
+
+    if (isAutoScrolling) {
+      carousel.scrollLeft += autoScrollSpeed * elapsedSeconds;
+    }
+
+    previousFrameTime = currentFrameTime;
+    window.requestAnimationFrame(autoScroll);
+  };
+
+  carousel.addEventListener('scroll', resetCarouselPosition, { passive: true });
+  carousel.addEventListener('pointerdown', pauseAutoScroll);
+  carousel.addEventListener('pointerup', resumeAutoScroll);
+  carousel.addEventListener('pointercancel', resumeAutoScroll);
+  carousel.addEventListener('wheel', () => {
+    pauseAutoScroll();
+    resumeAutoScroll();
+  }, { passive: true });
+  window.addEventListener('resize', () => {
+    carousel.scrollLeft = 0;
+  });
+
+  window.requestAnimationFrame(autoScroll);
 });
