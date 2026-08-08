@@ -1,6 +1,7 @@
 ---
 layout: about
 title: About
+permalink: /
 intro: Hi, I'm Will—a Product Designer based in New York. I'm currently at
   Instagram working on Reels. Over the years, I've built apps and websites for a
   range of startups, technology companies and small businesses. You can find
